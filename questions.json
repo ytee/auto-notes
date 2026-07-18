@@ -1,0 +1,3185 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "title": "FSM Foundations and Safety Leadership",
+      "focus": "Vocabulary, lifecycle, timing, safety case, culture and confirmation measures.",
+      "deliverable": "One-page lifecycle map plus a fault-to-safety-evidence trace.",
+      "target": "45–55 min"
+    },
+    {
+      "day": 2,
+      "title": "Item Definition, HARA and Functional Safety Concept",
+      "focus": "Brake/ESC item boundary, hazardous events, ASIL, safety goals and degraded operation.",
+      "deliverable": "Mini HARA and FSC for unintended braking.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 3,
+      "title": "SysML, MBSE and System Safety Architecture",
+      "focus": "Requirements, interfaces, behavior, TSC, HSI, independence and architecture review.",
+      "deliverable": "Logical ESC architecture with safety interfaces and modes.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 4,
+      "title": "Requirements, Traceability, Suppliers and Configuration",
+      "focus": "DOORS/Polarion, DIA, SEooC, reuse, change and configuration management.",
+      "deliverable": "Traceability and supplier-interface checklist.",
+      "target": "45–55 min"
+    },
+    {
+      "day": 5,
+      "title": "FMEA, FTA, DFA and ASIL Decomposition",
+      "focus": "Safety-oriented analyses and their feedback into architecture.",
+      "deliverable": "Mini FMEA + FTA + DFA for one ESC fault path.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 6,
+      "title": "Hardware Safety and Random Hardware Failures",
+      "focus": "HSRs, fault classes, SPFM/LFM, PMHF, sensors, MCU and actuator safety.",
+      "deliverable": "Hardware safety concept and diagnostic evidence plan.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 7,
+      "title": "Software Safety Architecture and Verification",
+      "focus": "SSRs, FFI, monitoring, unit/integration verification, MBD and tool confidence.",
+      "deliverable": "Software safety architecture review sheet.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 8,
+      "title": "Brakes, ESC and Vehicle-Control Safety",
+      "focus": "Vehicle dynamics, control chain, plausibility, unintended intervention and degradation.",
+      "deliverable": "End-to-end ESC intervention and fault-response model.",
+      "target": "55–60 min"
+    },
+    {
+      "day": 9,
+      "title": "V&V, CAN, OBD, Production and Service",
+      "focus": "Test strategy, fault injection, network safety, diagnostics, validation and post-development.",
+      "deliverable": "Fault-injection and safety-validation matrix.",
+      "target": "50–60 min"
+    },
+    {
+      "day": 10,
+      "title": "Senior Interview, Safety Case and Release Decisions",
+      "focus": "Leadership scenarios, assessments, architecture trade-offs and end-to-end mock interview.",
+      "deliverable": "15-minute safety-case presentation for integrated brake/ESC.",
+      "target": "55–60 min"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "FSM",
+      "desc": "Lifecycle, planning, governance, safety case, confirmation, competence and release.",
+      "iso": "Parts 2, 7 and Part 8 supporting processes"
+    },
+    {
+      "name": "HARA",
+      "desc": "Item, hazards, S/E/C, ASIL, safety goals and FSC.",
+      "iso": "Part 3; examples in Part 10"
+    },
+    {
+      "name": "SysML",
+      "desc": "Requirements, structure, behavior, interfaces, allocation and traceability.",
+      "iso": "Supports Parts 3, 4, 6, 8 and 9"
+    },
+    {
+      "name": "System Architecture",
+      "desc": "TSC, HSI, mechanisms, FTTI, independence and degraded states.",
+      "iso": "Part 4 and Part 9"
+    },
+    {
+      "name": "Brakes",
+      "desc": "Base braking, brake assist, ABS, brake-by-wire and actuation safety.",
+      "iso": "Domain applied across Parts 3–9"
+    },
+    {
+      "name": "ESC",
+      "desc": "Vehicle dynamics, yaw control, sensing, arbitration and degradation.",
+      "iso": "Domain applied across Parts 3–9"
+    },
+    {
+      "name": "Control Functions",
+      "desc": "Estimation, control chain, monitors, timing, limits and arbitration.",
+      "iso": "Parts 4 and 6 with Parts 3 and 9"
+    },
+    {
+      "name": "Requirements",
+      "desc": "Quality, hierarchy, allocation, traceability, variants and change.",
+      "iso": "Part 8 Clause 6; Parts 3–6"
+    },
+    {
+      "name": "Safety Analysis",
+      "desc": "FMEA, FTA, assumptions, fault classification and design feedback.",
+      "iso": "Part 9 Clause 8; Parts 4–6"
+    },
+    {
+      "name": "DFA",
+      "desc": "Common causes, cascades, coupling factors and independence.",
+      "iso": "Part 9 Clause 7; Part 11 guidance"
+    },
+    {
+      "name": "Hardware",
+      "desc": "HSRs, SPFM/LFM, PMHF/EEC, sensors, MCU and actuators.",
+      "iso": "Part 5; Part 11 guidance"
+    },
+    {
+      "name": "Software",
+      "desc": "SSRs, architecture, FFI, implementation and verification.",
+      "iso": "Part 6"
+    },
+    {
+      "name": "Verification",
+      "desc": "Reviews, analyses, integration, fault injection and evidence.",
+      "iso": "Parts 4–6; Part 8 Clause 9"
+    },
+    {
+      "name": "Validation",
+      "desc": "Vehicle-level demonstration of safety-goal achievement.",
+      "iso": "Part 4 Clause 8"
+    },
+    {
+      "name": "CAN",
+      "desc": "Contracts, E2E, freshness, timing, overload and bus faults.",
+      "iso": "Parts 4, 6 and 8"
+    },
+    {
+      "name": "OBD",
+      "desc": "Service diagnostics versus time-critical safety diagnostics.",
+      "iso": "Parts 7 and 8"
+    },
+    {
+      "name": "Supplier",
+      "desc": "DIA, distributed development, SEooC/AoU and legacy evidence.",
+      "iso": "Part 8; Parts 10 and 11"
+    }
+  ],
+  "matrix": [
+    [
+      "FSM",
+      "Safety lifecycle, roles, planning, anomalies, safety case and release",
+      "Part 2 Clauses 5–7; Part 8; Part 7",
+      "Connect governance decisions to technical evidence and residual risk."
+    ],
+    [
+      "SysML / MBSE",
+      "Model item, requirements, architecture, behavior, interfaces and evidence links",
+      "Part 3 item/FSC; Part 4 TSC; Part 8 requirements; Part 9 analyses",
+      "Use models to make safety intent reviewable, not as decoration."
+    ],
+    [
+      "System Architecture",
+      "TSC, mechanisms, HSI, FTTI, independence and degradation",
+      "Part 4 Clause 6; Part 9 Clauses 5–8",
+      "Explain nominal behavior and failure behavior together."
+    ],
+    [
+      "Brakes",
+      "Unintended, lost and asymmetric braking; actuation; availability",
+      "Parts 3–9; Part 7 for production/service",
+      "Domain dynamics determine hazards, timing, safe states and validation limits."
+    ],
+    [
+      "ESC / Control",
+      "State estimation, yaw control, arbitration, monitoring and degradation",
+      "Parts 3, 4, 6 and 9",
+      "Review vehicle dynamics and safety architecture as one end-to-end loop."
+    ],
+    [
+      "FMEA / FTA / DFA",
+      "Failure modes, top events, combinations, common causes and design action",
+      "Part 9 Clauses 7–8; Parts 5 and 6",
+      "Analysis must feed design and tests, not remain a report."
+    ],
+    [
+      "Hardware Safety",
+      "Fault class, coverage, SPFM/LFM, PMHF, sensors, MCU and drivers",
+      "Part 5 Clauses 6–10; Part 11",
+      "Vendor evidence requires item-specific integration and AoU verification."
+    ],
+    [
+      "Software Safety",
+      "SSRs, FFI, monitoring, unit design, integration and tools",
+      "Part 6; Part 8 Clause 11",
+      "Address temporal and communication interference, not memory only."
+    ],
+    [
+      "Requirements / Tools",
+      "Typed traceability, baselines, change, variants and test evidence",
+      "Part 8 Clauses 6–10",
+      "Enable semantic impact analysis and configuration-correct evidence."
+    ],
+    [
+      "CAN / OBD",
+      "Signal integrity, freshness, bus failures, DTCs and service behavior",
+      "Parts 4, 6, 7 and 8",
+      "Frame CRC and DTC storage do not replace application safety reaction."
+    ],
+    [
+      "V&V",
+      "MIL/SIL/HIL, fault injection, rigs, vehicle and safety validation",
+      "Parts 4–6; Part 8 Clause 9",
+      "Choose test level by observability, fidelity and physical effect."
+    ],
+    [
+      "Supplier / SEooC",
+      "DIA, assumptions, safety manual, legacy and integration evidence",
+      "Part 8 Clause 5 and 12–16; Parts 10/11",
+      "Certificates never remove integrator responsibility."
+    ]
+  ],
+  "jdMap": [
+    [
+      "System architecture leadership",
+      "Days 3, 6, 8, 10",
+      "TSC, interfaces, mechanisms, trade-offs and brake/ESC case"
+    ],
+    [
+      "Requirements and traceability",
+      "Days 3–4, 9",
+      "Requirement quality, SysML links, DOORS/Polarion and V&V evidence"
+    ],
+    [
+      "MBSE / SysML",
+      "Day 3 + track",
+      "BDD/IBD, states, sequences, allocation and governance"
+    ],
+    [
+      "Risk assessment and FMEA",
+      "Days 2 and 5",
+      "HARA, FMEA, FTA, DFA and decomposition"
+    ],
+    [
+      "V&V and acceptance criteria",
+      "Day 9",
+      "MIL/SIL/HIL/rig/vehicle, fault injection and validation"
+    ],
+    [
+      "Configuration and change",
+      "Days 4 and 10",
+      "Baselines, variants, impact and evidence invalidation"
+    ],
+    [
+      "CAN and OBD-II",
+      "Days 8–9",
+      "E2E/freshness, bus faults, DTC and service interaction"
+    ],
+    [
+      "Senior leadership",
+      "Days 1 and 10",
+      "Culture, supplier escalation, assessment and release"
+    ]
+  ],
+  "questions": [
+    {
+      "id": "D1Q1",
+      "day": 1,
+      "tier": "Foundation",
+      "tracks": [
+        "FSM",
+        "Core Concepts"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "What is automotive functional safety, and how does it differ from reliability, quality, cybersecurity, and SOTIF?",
+      "answer": [
+        "Functional safety addresses unreasonable risk caused by malfunctioning behavior of safety-related E/E systems.",
+        "Reliability concerns continued intended operation; safe degradation can reduce reliability while preserving safety.",
+        "Quality broadly prevents defects; ISO 26262 adds risk-based integrity, safety requirements, independence, analyses and evidence.",
+        "Cybersecurity treats malicious actions; SOTIF treats hazards from functional insufficiency or foreseeable misuse without a fault."
+      ],
+      "probes": [
+        "Give one braking example for each domain.",
+        "Can a shutdown be safe but unreliable?",
+        "How can a cyber event enter a safety case?"
+      ],
+      "refs": [
+        "ISO 26262-1 scope/vocabulary",
+        "ISO 26262-2 safety management"
+      ]
+    },
+    {
+      "id": "D1Q2",
+      "day": 1,
+      "tier": "Foundation",
+      "tracks": [
+        "FSM",
+        "Lifecycle"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Walk through the automotive safety lifecycle and name the principal evidence from concept to decommissioning.",
+      "answer": [
+        "Item definition and HARA create hazardous events, safety goals and the FSC.",
+        "The TSC and system architecture refine and allocate technical requirements to hardware and software.",
+        "Unit/component/system/vehicle integration verifies the implementation; safety validation evaluates achievement of safety goals.",
+        "Requirements, configuration, change, verification, documentation, tools, production, service and decommissioning support the lifecycle.",
+        "A senior answer shows bidirectional traceability and progressive safety-case construction."
+      ],
+      "probes": [
+        "Where do confirmation measures fit?",
+        "Which baselines precede implementation?",
+        "How does a field change re-enter the lifecycle?"
+      ],
+      "refs": [
+        "ISO 26262-2 Clauses 5–7",
+        "ISO 26262 Parts 3–8"
+      ]
+    },
+    {
+      "id": "D1Q3",
+      "day": 1,
+      "tier": "Foundation",
+      "tracks": [
+        "Core Concepts",
+        "System Architecture"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Differentiate item, system, element, component, hardware part and software unit using ESC.",
+      "answer": [
+        "The item is the vehicle-level function or set of functions subject to the safety lifecycle and defined boundaries.",
+        "A system is a set of interacting elements; ESC can include sensing, computation, communication and actuation.",
+        "An element is any architectural building block; ECU, inertial sensor cluster and hydraulic modulator are examples.",
+        "Components, hardware parts and software units are successively lower implementation levels chosen for allocation, analysis and verification."
+      ],
+      "probes": [
+        "Is the wheel-speed sensor inside the item?",
+        "Can CAN be an element?",
+        "Why does granularity matter?"
+      ],
+      "refs": [
+        "ISO 26262-1 terminology",
+        "ISO 26262-3 Clause 5"
+      ]
+    },
+    {
+      "id": "D1Q4",
+      "day": 1,
+      "tier": "Foundation",
+      "tracks": [
+        "Core Concepts",
+        "HARA"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Explain hazard, hazardous event, malfunctioning behavior, safety goal, safety requirement and safety mechanism.",
+      "answer": [
+        "A hazard is a potential source of harm; a hazardous event combines a hazard with an operational situation.",
+        "Malfunctioning behavior is item failure or unintended behavior that contributes to the event.",
+        "A safety goal is a top-level safety requirement derived from an ASIL-rated hazardous event.",
+        "Functional, technical, hardware and software safety requirements refine the goal.",
+        "A safety mechanism detects, controls or mitigates faults so a required safe or degraded state is reached in time."
+      ],
+      "probes": [
+        "Is “wheel-speed sensor stuck” a hazard?",
+        "Classify unintended braking at highway speed.",
+        "Give one safety mechanism and requirement."
+      ],
+      "refs": [
+        "ISO 26262-1 vocabulary",
+        "ISO 26262-3 Clauses 6–7"
+      ]
+    },
+    {
+      "id": "D1Q5",
+      "day": 1,
+      "tier": "Foundation",
+      "tracks": [
+        "Core Concepts",
+        "Safety Analysis"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Describe fault → error → failure and distinguish systematic faults from random hardware faults.",
+      "answer": [
+        "A fault can create an internal erroneous state; an error can propagate to an externally observable failure.",
+        "Systematic faults are related deterministically to development, manufacturing or use conditions and are controlled by process and verification.",
+        "Random hardware faults arise unpredictably from physical hardware effects and are controlled by architecture, diagnostics and quantitative evaluation.",
+        "The relevant abstraction and propagation path must be explicit in the safety analysis."
+      ],
+      "probes": [
+        "Give an ESC software systematic fault.",
+        "Give a random hardware propagation path.",
+        "Why is software not assigned a hardware-like FIT rate?"
+      ],
+      "refs": [
+        "ISO 26262-1 fault/error/failure",
+        "ISO 26262-5 Clauses 7–9"
+      ]
+    },
+    {
+      "id": "D1Q6",
+      "day": 1,
+      "tier": "Intermediate",
+      "tracks": [
+        "FSM",
+        "Control Functions",
+        "Brakes"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "For electronic braking, what can safe state, degraded state and emergency operation mean?",
+      "answer": [
+        "The required state is hazard-specific; disabling everything is not automatically safe when availability matters.",
+        "A safe state may retain base braking while inhibiting automatic pressure requests and warning the driver.",
+        "A degraded state may preserve ABS or limited braking while disabling ESC and constraining torque.",
+        "Emergency operation is temporary safe-enough operation when an immediate safe state cannot be reached or maintained.",
+        "Specify transition, duration, driver interaction and assumptions."
+      ],
+      "probes": [
+        "What changes for brake-by-wire?",
+        "Can no ESC intervention itself be hazardous?",
+        "Who owns the degradation strategy?"
+      ],
+      "refs": [
+        "ISO 26262-1 safe state/emergency operation",
+        "ISO 26262-3 Clause 7",
+        "ISO 26262-10 Clause 12"
+      ]
+    },
+    {
+      "id": "D1Q7",
+      "day": 1,
+      "tier": "Intermediate",
+      "tracks": [
+        "FSM",
+        "Timing",
+        "System Architecture"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Explain FTTI, detection time, reaction time and allocated fault-handling time using an ESC actuator fault.",
+      "answer": [
+        "FTTI is the item-level interval from fault occurrence until a hazardous event can occur without safety action.",
+        "Detection plus reaction and physical settling must fit inside the allocated timing budget.",
+        "Include task periods, bus delays, debounce, actuator shutoff and hydraulic pressure decay.",
+        "Use worst-case phase, jitter and environmental conditions rather than average timing.",
+        "Verify allocation at element level and final behavior at system/vehicle level."
+      ],
+      "probes": [
+        "How is FTTI derived?",
+        "What if pressure decay dominates?",
+        "How does bus congestion enter the budget?"
+      ],
+      "refs": [
+        "ISO 26262-1 FTTI/FRTI",
+        "ISO 26262-4 Clause 6"
+      ]
+    },
+    {
+      "id": "D1Q8",
+      "day": 1,
+      "tier": "Intermediate",
+      "tracks": [
+        "FSM",
+        "Safety Case"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What is a safety case, and what makes it convincing?",
+      "answer": [
+        "It is a structured argument supported by evidence that the released item achieves functional safety in its defined context.",
+        "It links goals to requirements, architecture, analyses, verification, validation, assumptions and process evidence.",
+        "Claims, context, assumptions, evidence confidence and residual risk must be explicit.",
+        "Evidence must match the exact configuration and be internally consistent.",
+        "A strong review challenges missing links, stale evidence and unresolved anomalies."
+      ],
+      "probes": [
+        "Give a top-level ESC safety claim.",
+        "How do open anomalies affect release?",
+        "What evidence is invalidated by an architecture change?"
+      ],
+      "refs": [
+        "ISO 26262-2 Clause 6.4.8",
+        "ISO 26262-10 Clause 5.3"
+      ]
+    },
+    {
+      "id": "D1Q9",
+      "day": 1,
+      "tier": "Advanced",
+      "tracks": [
+        "FSM",
+        "Leadership"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "A project follows templates but suppresses safety concerns to protect schedule. Is it functionally safe?",
+      "answer": [
+        "Artifacts alone do not establish safety; safety culture requires authority, competence and transparent anomaly escalation.",
+        "Document and assess the concern, protect independent judgment and escalate through governance.",
+        "Schedule pressure cannot justify weakened classifications or hidden evidence gaps.",
+        "Corrective action can include replanning, independent review, additional verification and release restrictions."
+      ],
+      "probes": [
+        "Who may accept residual risk?",
+        "What evidence should be retained?",
+        "How do you protect the engineer raising the concern?"
+      ],
+      "refs": [
+        "ISO 26262-2 safety culture and anomaly management"
+      ]
+    },
+    {
+      "id": "D1Q10",
+      "day": 1,
+      "tier": "Advanced",
+      "tracks": [
+        "FSM",
+        "Assessment"
+      ],
+      "kind": "Comparison",
+      "minutes": 5,
+      "question": "Differentiate confirmation review, functional-safety audit and functional-safety assessment.",
+      "answer": [
+        "A confirmation review examines whether selected safety work products meet their objectives.",
+        "An audit examines whether required processes are implemented and followed.",
+        "An assessment judges whether functional safety has been achieved for the item using process and product evidence.",
+        "Independence requirements increase with ASIL and confirmation-measure type.",
+        "Scope, competence, findings, closure and release authority must be distinguished."
+      ],
+      "probes": [
+        "Can an author review their own work?",
+        "What should an ASIL-D assessment agenda cover?",
+        "How do supplier findings feed item assessment?"
+      ],
+      "refs": [
+        "ISO 26262-2 Clauses 6.4.9–6.4.12"
+      ]
+    },
+    {
+      "id": "D2Q1",
+      "day": 2,
+      "tier": "Foundation",
+      "tracks": [
+        "HARA",
+        "Brakes",
+        "ESC"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Create an item definition boundary for ESC. What belongs inside, outside and at the interfaces?",
+      "answer": [
+        "Define intended functions, variants, modes, dependencies and interactions.",
+        "Possible internal elements include control logic and modulator; interfaces include wheel speed, yaw, lateral acceleration, steering, pedal, torque and HMI.",
+        "State external systems and assumptions: power, CAN/gateway, base brakes, tires, service tools and driver.",
+        "Specify physical, functional and communication interfaces plus environmental constraints.",
+        "Choose boundaries for complete hazard analysis and clear ownership, not to minimize responsibility."
+      ],
+      "probes": [
+        "Is the pedal inside the item?",
+        "How do variants alter the boundary?",
+        "What changes with a shared inertial sensor?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 5"
+      ]
+    },
+    {
+      "id": "D2Q2",
+      "day": 2,
+      "tier": "Foundation",
+      "tracks": [
+        "HARA",
+        "Brakes"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Why should HARA begin with item-level malfunctioning behavior rather than a component FMEA list?",
+      "answer": [
+        "HARA evaluates vehicle-level hazardous events without dependence on a chosen implementation.",
+        "Component-first thinking can miss functional interaction hazards and unintended behavior.",
+        "FMEA later analyzes how component faults violate safety requirements.",
+        "Technology-independent goals preserve architectural freedom."
+      ],
+      "probes": [
+        "Name a hazard missed by sensor-only thinking.",
+        "When can FMEA inform HARA?",
+        "How do conflicting brake requests appear?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 6",
+        "ISO 26262-9 Clause 8"
+      ]
+    },
+    {
+      "id": "D2Q3",
+      "day": 2,
+      "tier": "Intermediate",
+      "tracks": [
+        "HARA",
+        "Brakes",
+        "ESC"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "List representative hazardous events for unintended braking, loss of braking support and incorrect ESC intervention.",
+      "answer": [
+        "Combine malfunctions with situations such as highway driving, cornering, low friction, close following, intersections, towing and service mode.",
+        "Examples include unexpected deceleration causing rear impact, insufficient deceleration at an intersection, differential braking causing yaw and loss of stability intervention on a slippery curve.",
+        "Retain situations only when severity, exposure or controllability differ materially.",
+        "Identify affected occupants and other road users."
+      ],
+      "probes": [
+        "How does reversing change the analysis?",
+        "Does speed alone define the situation?",
+        "How would trailer operation be included?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 6.4.2"
+      ]
+    },
+    {
+      "id": "D2Q4",
+      "day": 2,
+      "tier": "Intermediate",
+      "tracks": [
+        "HARA",
+        "ASIL"
+      ],
+      "kind": "Practical",
+      "minutes": 6,
+      "question": "Justify Severity, Exposure and Controllability for unintended differential braking on a highway curve.",
+      "answer": [
+        "Severity is based on potential harm, not fault probability.",
+        "Exposure is frequency or duration of the operational situation, not component failure rate.",
+        "Controllability considers expected avoidance by drivers or other road users, suddenness, dynamics and reaction time.",
+        "Record data, assumptions, boundary cases and conservative rationale.",
+        "Review consistency across similar hazards and variants."
+      ],
+      "probes": [
+        "Why is exposure not sensor failure probability?",
+        "Can a warning improve controllability?",
+        "How is expert disagreement resolved?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 6.4.3"
+      ]
+    },
+    {
+      "id": "D2Q5",
+      "day": 2,
+      "tier": "Intermediate",
+      "tracks": [
+        "HARA",
+        "Safety Goals",
+        "Brakes"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Draft implementation-independent safety goals for unintended braking and loss of braking support.",
+      "answer": [
+        "State the prohibited or required item behavior and assign the ASIL.",
+        "Constrain unintended deceleration/yaw or preserve required braking without naming a particular MCU or CRC.",
+        "Include operating states, availability, safe state and timing attributes where needed.",
+        "Trace every ASIL-rated event and justify combined goals."
+      ],
+      "probes": [
+        "Can two hazards share one goal?",
+        "Should a goal mention CAN CRC?",
+        "When should quantitative limits appear?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 6.4.4",
+        "ISO 26262-10 Clause 6.5"
+      ]
+    },
+    {
+      "id": "D2Q6",
+      "day": 2,
+      "tier": "Intermediate",
+      "tracks": [
+        "FSC",
+        "Brakes",
+        "ESC"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Derive functional safety requirements preventing hazardous unintended ESC yaw intervention.",
+      "answer": [
+        "Define authorization and plausibility, independent monitoring, arbitration, inhibition, warning and degraded operation.",
+        "Specify functional behavior, timing, modes and interfaces without detailed implementation.",
+        "Allocate to sensing, control, actuator control, power and HMI.",
+        "Define safety-validation criteria and assumptions."
+      ],
+      "probes": [
+        "What monitor can be sufficiently independent?",
+        "How are brake and ESC requests arbitrated?",
+        "What is the functional safe state?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 7"
+      ]
+    },
+    {
+      "id": "D2Q7",
+      "day": 2,
+      "tier": "Advanced",
+      "tracks": [
+        "FSC",
+        "Availability",
+        "Brakes"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "Why can a fail-silent concept be insufficient for braking and stability functions?",
+      "answer": [
+        "Braking availability can itself be safety-related, especially in brake-by-wire.",
+        "The concept may require fault tolerance, redundancy, degraded modes or temporary emergency operation.",
+        "Analyze loss, unintended function and mode transitions.",
+        "Warnings cannot compensate for dynamics that become hazardous before reaction.",
+        "Specify retained subfunctions, limits, duration and exit conditions."
+      ],
+      "probes": [
+        "Can base braking be an external measure?",
+        "What is minimum degraded capability?",
+        "How is controllability validated?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 7",
+        "ISO 26262-10 Clause 12"
+      ]
+    },
+    {
+      "id": "D2Q8",
+      "day": 2,
+      "tier": "Advanced",
+      "tracks": [
+        "HARA",
+        "Brakes",
+        "Human Factors"
+      ],
+      "kind": "Challenge",
+      "minutes": 5,
+      "question": "A team claims a dashboard warning lowers controllability because it appears within two seconds. Challenge it.",
+      "answer": [
+        "Controllability depends on whether the user can perceive and act before harm, not on warning existence.",
+        "Fast unintended yaw or braking may occur before the warning is useful.",
+        "Assess latency, salience, workload, available maneuver and effects on following traffic.",
+        "Use human-factors or vehicle evidence for the specific scenario.",
+        "Treat warning effectiveness as an assumption to validate."
+      ],
+      "probes": [
+        "What evidence would make the warning credible?",
+        "Does an acoustic warning help?",
+        "How do other road users affect C?"
+      ],
+      "refs": [
+        "ISO 26262-3 controllability",
+        "ISO 26262-4 safety validation"
+      ]
+    },
+    {
+      "id": "D2Q9",
+      "day": 2,
+      "tier": "Advanced",
+      "tracks": [
+        "HARA",
+        "Change Management",
+        "ESC"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "A sport ESC mode allows larger sideslip before intervention. What safety work must be revisited?",
+      "answer": [
+        "Perform impact analysis on item definition, modes, intended behavior and interfaces.",
+        "Revisit HARA because controllability and vehicle response change.",
+        "Update FSC/TSC, limits, diagnostics, warnings, requirements and analyses.",
+        "Reverify software, calibrations, mode transitions and affected variants.",
+        "Update safety case and controlled baselines."
+      ],
+      "probes": [
+        "Is this only calibration?",
+        "How is unauthorized activation prevented?",
+        "Which regression tests are mandatory?"
+      ],
+      "refs": [
+        "ISO 26262-2 impact analysis",
+        "ISO 26262-8 Clause 8"
+      ]
+    },
+    {
+      "id": "D2Q10",
+      "day": 2,
+      "tier": "Advanced",
+      "tracks": [
+        "HARA",
+        "Review"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What weaknesses do you look for in a brake or ESC HARA?",
+      "answer": [
+        "Implementation-biased hazards, missing situations and confusion of hazard with failure mode.",
+        "Weak exposure/controllability rationale and hidden reliance on warnings.",
+        "Design-prescriptive goals, unclear safe states or missing availability.",
+        "Omitted interaction with ADAS, powertrain, trailer, service, communication and degraded modes.",
+        "Poor completeness, consistency and assumption verification."
+      ],
+      "probes": [
+        "How do you sample-check a large HARA?",
+        "What evidence supports completeness?",
+        "When is independent review needed?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clauses 5–7"
+      ]
+    },
+    {
+      "id": "D3Q1",
+      "day": 3,
+      "tier": "Foundation",
+      "tracks": [
+        "SysML",
+        "MBSE",
+        "System Architecture"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Which SysML views are useful for functional safety and what question does each answer?",
+      "answer": [
+        "Requirement diagrams show hierarchy, derivation, allocation and verification.",
+        "BDD/IBD show decomposition, interfaces, flows, redundancy and shared resources.",
+        "Activity, sequence and state diagrams show behavior, timing, fault reaction and degraded transitions.",
+        "Parametrics can capture timing and engineering budgets.",
+        "The model is valuable only with controlled semantics, ownership and configuration."
+      ],
+      "probes": [
+        "Which view shows FTTI allocation?",
+        "How is a safety mechanism represented?",
+        "What should remain outside SysML?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 6",
+        "ISO 26262-8 Clause 6"
+      ]
+    },
+    {
+      "id": "D3Q2",
+      "day": 3,
+      "tier": "Foundation",
+      "tracks": [
+        "SysML",
+        "Requirements"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Model the trace from hazardous event to safety validation.",
+      "answer": [
+        "Create artifacts for hazardous event, goal, FSR, TSR, HSR/SSR, architecture, test and evidence.",
+        "Use typed relations such as derive, satisfy and verify consistently.",
+        "Attach ASIL, timing and allocation attributes.",
+        "Enable bidirectional impact analysis and baseline the model with textual requirements.",
+        "Review semantic correctness, not just link count."
+      ],
+      "probes": [
+        "Can one test verify several requirements?",
+        "How are assumptions modeled?",
+        "How do you prevent circular traceability?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 6",
+        "ISO 26262-4 Clauses 6–8"
+      ]
+    },
+    {
+      "id": "D3Q3",
+      "day": 3,
+      "tier": "Intermediate",
+      "tracks": [
+        "SysML",
+        "System Architecture",
+        "ESC"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Create a logical ESC architecture and identify safety-relevant interfaces.",
+      "answer": [
+        "Use sensing, acquisition, state estimation, control, arbitration, actuation, diagnostics, power and HMI blocks.",
+        "Identify wheel speed, steering, yaw/lateral acceleration, pedal, torque, pressure and warning interfaces.",
+        "Specify units, range, rate, freshness, validity, initialization and ownership.",
+        "Show monitor boundaries, diverse paths and common resources.",
+        "Separate logical architecture from ECU deployment before mapping to physical elements."
+      ],
+      "probes": [
+        "Where does state estimation belong?",
+        "Which signals need E2E protection?",
+        "What shared resource threatens independence?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 6.4.3",
+        "ISO 26262-9 Clauses 6–7"
+      ]
+    },
+    {
+      "id": "D3Q4",
+      "day": 3,
+      "tier": "Intermediate",
+      "tracks": [
+        "SysML",
+        "Behavior",
+        "Control Functions"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Use state and sequence models to describe normal, degraded, emergency and safe-state behavior.",
+      "answer": [
+        "Define explicit modes, guards, events, timing and allowed functions.",
+        "Model detection, debounce, arbitration, warning, actuator response and recovery.",
+        "Use sequences for cross-element timing and state machines for persistent modes.",
+        "Include simultaneous faults, reset, startup, shutdown and communication loss.",
+        "Derive review and test scenarios from the model."
+      ],
+      "probes": [
+        "What happens when two faults occur in transition?",
+        "Should automatic recovery be allowed?",
+        "How is a latched fault modeled?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 6",
+        "ISO 26262-6 Clause 7"
+      ]
+    },
+    {
+      "id": "D3Q5",
+      "day": 3,
+      "tier": "Intermediate",
+      "tracks": [
+        "System Architecture",
+        "TSC",
+        "Allocation"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What is the difference between FSC and TSC?",
+      "answer": [
+        "FSC specifies functional safety requirements and preliminary allocation to achieve goals.",
+        "TSC refines them into technical requirements, system architecture, safety mechanisms and hardware/software allocation.",
+        "TSC addresses systematic failures, random hardware faults, timing, interfaces, external measures and verification.",
+        "Traceability must preserve the original hazard-control intent."
+      ],
+      "probes": [
+        "Give one FSR and TSR refinements.",
+        "Where is diagnostic coverage allocated?",
+        "How does HSI emerge?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 7",
+        "ISO 26262-4 Clause 6"
+      ]
+    },
+    {
+      "id": "D3Q6",
+      "day": 3,
+      "tier": "Intermediate",
+      "tracks": [
+        "System Architecture",
+        "HSI",
+        "Hardware",
+        "Software"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "What belongs in the HSI for a safety-related brake ECU?",
+      "answer": [
+        "Signal definitions, timing, ranges, scaling, validity, initialization and ownership.",
+        "Registers, memory, interrupts, watchdog, reset, clock, power modes and error reporting.",
+        "Safety-mechanism configuration and software responsibilities for detection, reaction and tests.",
+        "Bootloader, calibration, startup/shutdown and communication constraints.",
+        "Verification responsibilities and MCU safety-manual assumptions."
+      ],
+      "probes": [
+        "Who handles ECC notifications?",
+        "How is watchdog timing allocated?",
+        "What changes when the bootloader changes?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 6.4.7",
+        "ISO 26262-5 Clause 6",
+        "ISO 26262-6 Clause 6"
+      ]
+    },
+    {
+      "id": "D3Q7",
+      "day": 3,
+      "tier": "Advanced",
+      "tracks": [
+        "System Architecture",
+        "DFA",
+        "Independence"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "Two redundant yaw channels use separate algorithms but the same supply and clock. Can independence or ASIL decomposition be claimed?",
+      "answer": [
+        "Algorithmic separation alone does not prove independence.",
+        "Analyze common supply, clock, thermal, communication, calibration, specification and tool dependencies.",
+        "Use DFA to identify initiators and coupling factors and add containment or diversity.",
+        "Decomposition requires redundant safety requirements and sufficient independence.",
+        "Confirmation measures remain tied to the original safety-goal ASIL."
+      ],
+      "probes": [
+        "Would separate tasks help?",
+        "What diverse source could be used?",
+        "How is supply isolation verified?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clauses 5 and 7"
+      ]
+    },
+    {
+      "id": "D3Q8",
+      "day": 3,
+      "tier": "Advanced",
+      "tracks": [
+        "System Architecture",
+        "Freedom from Interference",
+        "Software"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Explain freedom from interference at system and software levels.",
+      "answer": [
+        "It prevents one element from causing cascading failure that violates another safety requirement.",
+        "System channels include power, clock, thermal, mechanical, communication and shared resources.",
+        "Software channels include memory, timing, execution, communication, peripherals and services.",
+        "Partitioning must be supported by configuration, analysis and fault tests.",
+        "Residual dependencies belong in DFA and the safety case."
+      ],
+      "probes": [
+        "How can a QM logger affect ASIL-D control?",
+        "Can overload violate FFI?",
+        "What tests demonstrate memory isolation?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clauses 6–7",
+        "ISO 26262-6 Annex D"
+      ]
+    },
+    {
+      "id": "D3Q9",
+      "day": 3,
+      "tier": "Advanced",
+      "tracks": [
+        "SysML",
+        "Review",
+        "Configuration Management"
+      ],
+      "kind": "Challenge",
+      "minutes": 5,
+      "question": "A SysML model and DOORS database disagree on an interface timeout. Which is authoritative and what do you do?",
+      "answer": [
+        "Authority must be defined in the project information/configuration model; ambiguity is a process defect.",
+        "Identify the controlled baseline and freeze affected decisions.",
+        "Analyze impact on design, timing, supplier obligations, analysis and tests.",
+        "Resolve through controlled change and synchronize derived artifacts.",
+        "Invalidate and regenerate affected evidence in the safety case."
+      ],
+      "probes": [
+        "Would DOORS always be authoritative?",
+        "How do you manage model-generated requirements?",
+        "What is the release impact?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clauses 6–8 and 10"
+      ]
+    },
+    {
+      "id": "D3Q10",
+      "day": 3,
+      "tier": "Advanced",
+      "tracks": [
+        "System Architecture",
+        "Brakes",
+        "Review"
+      ],
+      "kind": "Review",
+      "minutes": 6,
+      "question": "What ten questions do you ask before approving an ESC TSC?",
+      "answer": [
+        "Are goals and FSRs completely allocated and traced?",
+        "Are normal, degraded, emergency and safe states unambiguous?",
+        "Are FTTI and fault-handling budgets complete?",
+        "Are sensor, CAN, power and actuator interfaces specified?",
+        "Do mechanisms have clear detection, reaction and coverage?",
+        "Are independence, coexistence and shared resources analyzed?",
+        "Are HSI and HW/SW allocations consistent?",
+        "Are variants, calibration, reset and recovery covered?",
+        "Are verification and validation criteria feasible?",
+        "Are assumptions, supplier obligations and open risks controlled?"
+      ],
+      "probes": [
+        "Which question exposes most gaps?",
+        "What is a blocking finding?",
+        "What evidence is required at this review?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 6",
+        "ISO 26262-9 Clauses 6–8"
+      ]
+    },
+    {
+      "id": "D4Q1",
+      "day": 4,
+      "tier": "Foundation",
+      "tracks": [
+        "Requirements",
+        "FSM"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "What makes a safety requirement reviewable, implementable and verifiable?",
+      "answer": [
+        "It is unique, atomic, unambiguous, feasible, necessary and consistent.",
+        "It states conditions, behavior, limits, timing, modes and fault response at the correct abstraction.",
+        "Attributes include ASIL, source, allocation, rationale, owner and verification method.",
+        "It has upward/downward traceability and measurable acceptance criteria.",
+        "Avoid vague terms such as quickly, robust and as appropriate."
+      ],
+      "probes": [
+        "Rewrite “detect sensor errors quickly.”",
+        "When is one requirement too large?",
+        "How do you specify prohibited behavior?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 6"
+      ]
+    },
+    {
+      "id": "D4Q2",
+      "day": 4,
+      "tier": "Foundation",
+      "tracks": [
+        "Requirements",
+        "Traceability"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Design a traceability chain for an unintended-braking safety goal.",
+      "answer": [
+        "Trace event → goal → FSR → TSR → HSR/SSR → architecture → analysis → verification → validation.",
+        "Trace assumptions and external measures to owners and evidence.",
+        "Link changes, anomalies and variants to affected artifacts.",
+        "Use coverage reports to find gaps but review semantic correctness.",
+        "Preserve the exact released baseline in the safety case."
+      ],
+      "probes": [
+        "What is suspect traceability?",
+        "How are derived requirements handled?",
+        "Can an FMEA support verification?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 6",
+        "ISO 26262-2 safety case"
+      ]
+    },
+    {
+      "id": "D4Q3",
+      "day": 4,
+      "tier": "Intermediate",
+      "tracks": [
+        "Requirements",
+        "Verification"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "Review: “The ECU shall detect all wheel-speed sensor failures.” What is wrong?",
+      "answer": [
+        "“All failures” is undefined and unverifiable; enumerate relevant failure modes and conditions.",
+        "Define threshold, timing, debounce, status, coverage target and reaction.",
+        "Separate detection and system reaction where appropriate.",
+        "State assumptions such as minimum speed and availability of comparison signals.",
+        "Define analysis/tests for stuck, drift, intermittent, missing and correlated failures."
+      ],
+      "probes": [
+        "What limitations exist at low speed?",
+        "Can detection be vehicle-level only?",
+        "What happens after detection?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 6",
+        "ISO 26262-4 Clause 6"
+      ]
+    },
+    {
+      "id": "D4Q4",
+      "day": 4,
+      "tier": "Intermediate",
+      "tracks": [
+        "DOORS/Polarion",
+        "Requirements",
+        "Job Focus"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "How would you structure DOORS or Polarion for safety requirements, tests, analyses and releases?",
+      "answer": [
+        "Define artifact types, attributes, typed links, workflows, roles and review states.",
+        "Maintain safety classification and end-to-end traceability.",
+        "Use baselines, suspect links, history, approvals and variant fields.",
+        "Link tests/results to exact hardware, software and calibration baselines.",
+        "Use dashboards for coverage and risk without replacing semantic review."
+      ],
+      "probes": [
+        "How would suppliers exchange data?",
+        "What is mandatory before approval?",
+        "How do you prevent duplicate sources of truth?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clauses 6–10",
+        "Job description DOORS/Polarion"
+      ]
+    },
+    {
+      "id": "D4Q5",
+      "day": 4,
+      "tier": "Intermediate",
+      "tracks": [
+        "Change Management",
+        "Configuration Management",
+        "FSM"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "A wheel-speed filter constant changes late in validation. Describe the safety response.",
+      "answer": [
+        "Open a controlled change with motivation, owner, variants and baseline.",
+        "Assess control performance, fault detection, FTTI, HARA assumptions, requirements, analyses and tests.",
+        "Obtain safety approval before implementation and update traceability.",
+        "Run targeted and regression verification.",
+        "Release only a consistent software/calibration/evidence configuration."
+      ],
+      "probes": [
+        "Is calibration software?",
+        "What if the plant changes the value?",
+        "How is supplier calibration controlled?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clauses 7–8"
+      ]
+    },
+    {
+      "id": "D4Q6",
+      "day": 4,
+      "tier": "Intermediate",
+      "tracks": [
+        "Supplier",
+        "DIA",
+        "FSM"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What should a Development Interface Agreement contain for an ESC ECU supplier?",
+      "answer": [
+        "Allocate lifecycle activities, work products, safety requirements, ASILs, assumptions and interfaces.",
+        "Define responsibility for analyses, metrics, integration, validation and safety-case evidence.",
+        "Define change, anomaly, configuration, tool, competence and escalation processes.",
+        "Specify formats, milestones, review criteria and evidence access.",
+        "Cover production, service and third-party components."
+      ],
+      "probes": [
+        "Who owns vehicle validation?",
+        "What if evidence is proprietary?",
+        "How are open anomalies communicated?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 5 and Annex B"
+      ]
+    },
+    {
+      "id": "D4Q7",
+      "day": 4,
+      "tier": "Advanced",
+      "tracks": [
+        "SEooC",
+        "Supplier",
+        "System Architecture"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Explain SEooC and Assumptions of Use when integrating a safety MCU.",
+      "answer": [
+        "An SEooC is developed for assumed functionality, environment, interfaces and safety requirements outside a specific item.",
+        "The integrator maps item requirements and verifies every relevant AoU.",
+        "Configure watchdog, ECC, clock, reset, fault reporting and periodic tests as required.",
+        "Resolve unmet AoU with external measures or redesign.",
+        "Use the exact MCU configuration and vendor safety information in item analyses."
+      ],
+      "probes": [
+        "What if one AoU is unmet?",
+        "Can external software raise capability?",
+        "How do errata affect release?"
+      ],
+      "refs": [
+        "ISO 26262-10 Clause 9",
+        "ISO 26262-11 semiconductor guidance"
+      ]
+    },
+    {
+      "id": "D4Q8",
+      "day": 4,
+      "tier": "Advanced",
+      "tracks": [
+        "Reuse",
+        "Legacy",
+        "FSM"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "A legacy brake component was not developed to ISO 26262. How can its use be justified?",
+      "answer": [
+        "Perform impact analysis and determine applicable lifecycle tailoring.",
+        "Evaluate development evidence, field history, modifications, interfaces and use profile.",
+        "Consider hardware-element evaluation, software-component qualification, proven-in-use, external measures or redevelopment.",
+        "Address both systematic and random faults and record limitations.",
+        "Include the argument and verified assumptions in the safety case."
+      ],
+      "probes": [
+        "Does “millions sold” prove safety?",
+        "What field data is sufficient?",
+        "How do modifications invalidate credit?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clauses 12–16"
+      ]
+    },
+    {
+      "id": "D4Q9",
+      "day": 4,
+      "tier": "Advanced",
+      "tracks": [
+        "Supplier",
+        "Leadership",
+        "Requirements"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "An OEM allocates ASIL-D requirements but withholds goals and use assumptions. How do you proceed?",
+      "answer": [
+        "Explain the need for context to interpret safe state, timing, interfaces and verification.",
+        "Use DIA discussions to obtain minimum safety context while protecting confidentiality.",
+        "Document explicit assumptions and limits; do not silently invent context.",
+        "Escalate unresolved ambiguity and constrain compliance claims.",
+        "Use an SEooC-style approach only with controlled assumptions later verified by the integrator."
+      ],
+      "probes": [
+        "What minimum context is essential?",
+        "Can the supplier still do FMEA?",
+        "Who owns vehicle residual risk?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 5",
+        "ISO 26262-10 SEooC"
+      ]
+    },
+    {
+      "id": "D4Q10",
+      "day": 4,
+      "tier": "Advanced",
+      "tracks": [
+        "Requirements",
+        "Review",
+        "Job Focus"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What metrics govern safety requirements without encouraging superficial compliance?",
+      "answer": [
+        "Coverage: traceability, allocation and verification completeness.",
+        "Quality: review findings, ambiguity defects, volatility and reopened items.",
+        "Flow: aging of changes/anomalies and supplier response.",
+        "Evidence: passed tests by ASIL and exact baseline plus invalidated evidence.",
+        "Use metrics as investigation signals and sample semantic quality."
+      ],
+      "probes": [
+        "Which metric is easiest to game?",
+        "How do you show variant coverage?",
+        "What belongs on an executive dashboard?"
+      ],
+      "refs": [
+        "ISO 26262-8 supporting processes",
+        "Job focus requirements/V&V/configuration"
+      ]
+    },
+    {
+      "id": "D5Q1",
+      "day": 5,
+      "tier": "Foundation",
+      "tracks": [
+        "Safety Analysis",
+        "FMEA",
+        "FTA"
+      ],
+      "kind": "Comparison",
+      "minutes": 4,
+      "question": "Compare FMEA and FTA. Why should a senior safety engineer use both?",
+      "answer": [
+        "FMEA is bottom-up: element failure modes, causes, local/system effects, controls and actions.",
+        "FTA is top-down: a defined top event is decomposed into causal combinations.",
+        "FMEA supports systematic coverage; FTA exposes combinations and architectural paths.",
+        "They should be iterated with requirements and architecture and cross-checked.",
+        "Neither replaces DFA or quantitative hardware evaluation."
+      ],
+      "probes": [
+        "Which better exposes dual-point combinations?",
+        "How do you align abstraction levels?",
+        "When is FMEDA used?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 8",
+        "ISO 26262-5 Clause 7.4.3"
+      ]
+    },
+    {
+      "id": "D5Q2",
+      "day": 5,
+      "tier": "Intermediate",
+      "tracks": [
+        "FMEA",
+        "Brakes",
+        "Sensors"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Perform a mini-FMEA for a wheel-speed signal used by ABS and ESC.",
+      "answer": [
+        "Failure modes include missing, stuck, drift, noise, intermittent, wrong wheel, delayed and correlated wrong value.",
+        "Effects include false or missed intervention and wrong vehicle-speed or slip estimate.",
+        "Causes include sensor, tone ring, wiring, supply, acquisition, communication, mapping and conversion.",
+        "Controls include electrical checks, range/rate, cross-wheel/model plausibility, freshness and degraded control.",
+        "Record timing, coverage assumptions, safety requirements and verification actions."
+      ],
+      "probes": [
+        "How do you detect all four sensors drifting?",
+        "What is safe at low speed?",
+        "How does tire-size mismatch appear?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 8",
+        "ISO 26262-4 safety analyses"
+      ]
+    },
+    {
+      "id": "D5Q3",
+      "day": 5,
+      "tier": "Intermediate",
+      "tracks": [
+        "FTA",
+        "Brakes",
+        "Unintended Braking"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Build the first two levels of an FTA for hazardous unintended braking.",
+      "answer": [
+        "Define the top event with operating state, magnitude and duration.",
+        "Branches can include erroneous request, bad arbitration, actuator applies pressure without request, failed inhibit and failed reaction.",
+        "Add input corruption, algorithm fault, communication corruption, power/reset transient, driver-stage and mechanical faults.",
+        "Represent combinations where a primary fault plus monitor failure is required.",
+        "Use results to refine design, DFA, fault injection and quantitative analysis."
+      ],
+      "probes": [
+        "Where does pedal input enter?",
+        "How is a stuck valve modeled?",
+        "What is a minimal cut set for a monitored request?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 8",
+        "ISO 26262-10 Annex A"
+      ]
+    },
+    {
+      "id": "D5Q4",
+      "day": 5,
+      "tier": "Intermediate",
+      "tracks": [
+        "DFA",
+        "System Architecture",
+        "ESC"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Differentiate common-cause, cascading, common-mode failure and dependent-failure initiator.",
+      "answer": [
+        "Dependent failures are not statistically independent.",
+        "A common cause affects multiple elements without one element failure causing the other.",
+        "A cascading failure propagates from one element to another through a coupling path.",
+        "Common mode describes similar failure behavior and can result from a common cause.",
+        "A DFI is the root cause; coupling can be physical, functional, specification, process or tool-related."
+      ],
+      "probes": [
+        "Give a brake example for each.",
+        "Can common requirements create common cause?",
+        "How does thermal coupling cascade?"
+      ],
+      "refs": [
+        "ISO 26262-1 vocabulary",
+        "ISO 26262-9 Clause 7"
+      ]
+    },
+    {
+      "id": "D5Q5",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "DFA",
+        "ESC",
+        "Workshop"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Perform a DFA thought exercise on two-channel steering-angle acquisition.",
+      "answer": [
+        "List channels, safety mechanisms and independence assumptions.",
+        "Check shared mechanics, supply, ground, connector, ADC/reference, MCU, clock, communication, calibration and specification.",
+        "Identify initiators, coupling and effects on both channels and the comparator.",
+        "Use diversity, separated acquisition, independent vehicle-dynamics plausibility and containment.",
+        "Plan schematic/layout review, fault injection, environmental and integration evidence."
+      ],
+      "probes": [
+        "Is dual-track potentiometer sufficient?",
+        "What about shared calibration?",
+        "How is coverage affected?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 7"
+      ]
+    },
+    {
+      "id": "D5Q6",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "ASIL Decomposition",
+        "System Architecture"
+      ],
+      "kind": "Concept",
+      "minutes": 6,
+      "question": "Explain ASIL decomposition, prerequisites and common misuse.",
+      "answer": [
+        "It apportions redundant safety requirements to sufficiently independent paths that jointly achieve the same goal.",
+        "Both paths must be truly redundant for the safety requirement and independence must be demonstrated.",
+        "The original safety-goal ASIL still governs the overall argument and confirmation measures.",
+        "Do not claim decomposition merely because two modules or components exist.",
+        "Maintain decomposition notation, allocation, combined verification and DFA evidence."
+      ],
+      "probes": [
+        "Can ASIL D become B+B?",
+        "Can identical algorithms be independent?",
+        "What if power is shared?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 5",
+        "ISO 26262-10 Clause 11"
+      ]
+    },
+    {
+      "id": "D5Q7",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "Coexistence",
+        "Freedom from Interference",
+        "Software"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "An ASIL-D brake monitor shares a multicore SoC with a QM logger. What must be shown?",
+      "answer": [
+        "Identify shared CPU, memory, cache, interconnect, DMA, interrupts, peripherals, power and clock.",
+        "Define spatial, temporal and communication interference requirements.",
+        "Configure partitioning, budgets, priorities and fault containment.",
+        "Analyze dependent failures and test overload, corruption, DMA and interrupt storms.",
+        "Prove the QM function cannot violate ASIL-D timing or data integrity."
+      ],
+      "probes": [
+        "Does a separate core prove FFI?",
+        "How do caches matter?",
+        "What if the logger controls shared storage?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 6",
+        "ISO 26262-6 Annex D"
+      ]
+    },
+    {
+      "id": "D5Q8",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "Safety Analysis",
+        "Architecture Iteration"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "An independent monitor reads the same corrupted RAM value as the controller. What next?",
+      "answer": [
+        "Raise a safety-analysis finding and revise the mechanism or architecture.",
+        "Consider separate acquisition/storage, protected data, recomputation or diverse inputs.",
+        "Update requirements, HSI, timing and FMEA/FTA/DFA.",
+        "Verify the revised concept with fault injection and reassess coverage.",
+        "Close the finding with configuration-correct safety-case evidence."
+      ],
+      "probes": [
+        "Does ECC alone solve it?",
+        "How can stale valid data escape?",
+        "What independence is required?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 8",
+        "ISO 26262-4 Clause 6.4.4"
+      ]
+    },
+    {
+      "id": "D5Q9",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "Safety Analysis",
+        "Assumptions",
+        "Review"
+      ],
+      "kind": "Challenge",
+      "minutes": 5,
+      "question": "How do undocumented assumptions undermine safety analyses and hardware metrics?",
+      "answer": [
+        "Analyses are conditional arguments; hidden assumptions conceal diagnostic preconditions and dependencies.",
+        "Examples include signal availability, test interval, repair time, speed, driver reaction and fault independence.",
+        "Invalid assumptions can change fault class, coverage, cut sets, timing and safe-state feasibility.",
+        "Maintain assumptions as controlled artifacts with owners and verification.",
+        "Review them at integration, change and release."
+      ],
+      "probes": [
+        "How is an assumption verified?",
+        "Which belong in a safety manual?",
+        "What is an orphan assumption?"
+      ],
+      "refs": [
+        "ISO 26262-8 requirements management",
+        "ISO 26262-9 analyses"
+      ]
+    },
+    {
+      "id": "D5Q10",
+      "day": 5,
+      "tier": "Advanced",
+      "tracks": [
+        "Safety Analysis",
+        "Review"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What makes a safety analysis complete enough for release?",
+      "answer": [
+        "Scope and abstraction match the safety goals, architecture and released configuration.",
+        "Relevant failure modes, interfaces, modes, transitions, dependencies and combinations are covered.",
+        "Assumptions, data sources, classifications and coverage claims are justified.",
+        "Findings trace to requirements, design changes and verification.",
+        "Independent review confirms consistency across FMEA, FTA, DFA and quantitative work."
+      ],
+      "probes": [
+        "Can completeness be measured?",
+        "How are unknown modes handled?",
+        "What changes trigger re-analysis?"
+      ],
+      "refs": [
+        "ISO 26262-9 Clause 8",
+        "ISO 26262-2 safety case"
+      ]
+    },
+    {
+      "id": "D6Q1",
+      "day": 6,
+      "tier": "Foundation",
+      "tracks": [
+        "Hardware",
+        "Requirements"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "How are hardware safety requirements derived and coordinated with software?",
+      "answer": [
+        "Derive HSRs from TSRs and system architecture while preserving ASIL, timing and safe-state intent.",
+        "Specify hardware behavior, fault tolerance, diagnostics, environment and interfaces.",
+        "Refine HSI responsibilities for registers, interrupts, watchdog, ECC, power and clock monitoring.",
+        "Coordinate software-based tests, initialization and fault reaction.",
+        "Verify consistency against the TSC."
+      ],
+      "probes": [
+        "Who owns software RAM test?",
+        "Where is PMHF budget allocated?",
+        "What if hardware cannot meet reaction time?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clause 6"
+      ]
+    },
+    {
+      "id": "D6Q2",
+      "day": 6,
+      "tier": "Foundation",
+      "tracks": [
+        "Hardware",
+        "Safety Analysis"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Classify single-point, residual, detected/perceived/latent dual-point and safe faults.",
+      "answer": [
+        "A single-point fault alone can violate a safety goal and lacks effective control.",
+        "A residual fault is the uncovered fraction remaining after a mechanism.",
+        "A dual-point fault needs another independent fault and can be detected, perceived or latent.",
+        "A safe fault does not contribute to goal violation in the analyzed conditions.",
+        "Classification depends on the concept, operating conditions, coverage and test interval."
+      ],
+      "probes": [
+        "Can one physical fault have several classes?",
+        "Why are latent faults important?",
+        "How does driver perception matter?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clauses 8–9",
+        "ISO 26262-10 Clause 8"
+      ]
+    },
+    {
+      "id": "D6Q3",
+      "day": 6,
+      "tier": "Intermediate",
+      "tracks": [
+        "Hardware",
+        "Metrics"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Explain SPFM and LFM without relying only on formulas.",
+      "answer": [
+        "SPFM indicates how well architecture avoids or controls single-point and residual faults.",
+        "LFM indicates how well latent multiple-point faults, including mechanism faults, are detected or made safe.",
+        "Both depend on failure-rate allocation and fault classification.",
+        "Credible coverage and diagnostic intervals are essential.",
+        "They complement PMHF/EEC and systematic-fault controls."
+      ],
+      "probes": [
+        "Can high SPFM hide a weak design?",
+        "How does test interval affect LFM?",
+        "Which faults are excluded?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clause 8 and Annex C"
+      ]
+    },
+    {
+      "id": "D6Q4",
+      "day": 6,
+      "tier": "Intermediate",
+      "tracks": [
+        "Hardware",
+        "PMHF"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What is PMHF, and how does it differ from SPFM/LFM and ordinary reliability?",
+      "answer": [
+        "PMHF estimates average probability per hour of safety-goal violation from random hardware failures.",
+        "SPFM/LFM are architectural fault-class metrics; PMHF evaluates residual item-level random risk.",
+        "Ordinary reliability includes failures irrelevant to safety and may ignore diagnostic architecture.",
+        "Mission profile, BFR, distributions, independence and test intervals must be justified.",
+        "EEC is an alternative cause/cut-set evaluation route."
+      ],
+      "probes": [
+        "How is a budget allocated?",
+        "What is double counting?",
+        "How do transient faults enter?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clause 9",
+        "ISO 26262-10 Clause 8.4"
+      ]
+    },
+    {
+      "id": "D6Q5",
+      "day": 6,
+      "tier": "Intermediate",
+      "tracks": [
+        "Hardware",
+        "Sensors",
+        "Brakes"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Design a hardware safety concept for brake-pressure sensing.",
+      "answer": [
+        "Identify range, accuracy, timing and faults such as drift, stuck, open/short, reference and common mechanical faults.",
+        "Use suitable redundancy/diversity, supply/reference monitoring and range/rate/plausibility.",
+        "Consider ADC, MCU, connector, wiring and shared pressure path.",
+        "Define coverage, reaction, degraded mode and warning within timing.",
+        "Plan fault injection, environmental tests and production calibration controls."
+      ],
+      "probes": [
+        "Are two identical sensors enough?",
+        "How do both drifting together get detected?",
+        "What is the safe reaction?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clauses 6–10",
+        "ISO 26262-11 sensors/transducers"
+      ]
+    },
+    {
+      "id": "D6Q6",
+      "day": 6,
+      "tier": "Advanced",
+      "tracks": [
+        "Hardware",
+        "MCU",
+        "SEooC"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "A safety MCU provides lockstep, ECC, watchdog and clock monitor. What integration evidence is still required?",
+      "answer": [
+        "Map HSRs to MCU mechanisms and verify safety-manual assumptions and configuration.",
+        "Show startup/periodic tests, fault reporting, software handlers and reaction timing.",
+        "Address external power, reset, communication and actuator containment.",
+        "Integrate vendor FMEDA into item-level classification and metrics rather than copying values.",
+        "Verify fault injection, latent-fault handling, errata and configuration control."
+      ],
+      "probes": [
+        "Can a vendor certificate replace integration test?",
+        "What if the lockstep comparator fails?",
+        "How are corrected ECC errors handled?"
+      ],
+      "refs": [
+        "ISO 26262-11 semiconductor guidance",
+        "ISO 26262-5 Clauses 8–10"
+      ]
+    },
+    {
+      "id": "D6Q7",
+      "day": 6,
+      "tier": "Advanced",
+      "tracks": [
+        "Hardware",
+        "Actuators",
+        "Brakes"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Analyze unintended energization of a hydraulic valve driver.",
+      "answer": [
+        "Consider MCU output, gate driver, shorts, supply overvoltage, command corruption and mechanical sticking.",
+        "Use current/voltage feedback, independent enable/inhibit, driver diagnostics and pressure/deceleration plausibility.",
+        "Assess common supply, thermal and substrate coupling.",
+        "Allocate rapid detection, inhibition and pressure release within FTTI.",
+        "Validate electrical injection through hydraulic and vehicle behavior."
+      ],
+      "probes": [
+        "Can software disable a shorted transistor?",
+        "How is inhibit made independent?",
+        "What is the valve fail-safe state?"
+      ],
+      "refs": [
+        "ISO 26262-5 hardware design/analysis",
+        "ISO 26262-11 analogue DFA"
+      ]
+    },
+    {
+      "id": "D6Q8",
+      "day": 6,
+      "tier": "Advanced",
+      "tracks": [
+        "Hardware",
+        "Latent Faults",
+        "Diagnostics"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "How do you choose diagnostic test intervals for latent brake faults?",
+      "answer": [
+        "Start from combinations that can violate goals and allowable latent exposure.",
+        "Consider startup frequency, drive duration, continuous/on-demand checks and repair time.",
+        "Ensure tests do not create hazards or unacceptable unavailability.",
+        "Allocate intervals to HSR/SSR and verify timing and coverage.",
+        "Preserve assumptions through service and field diagnostics."
+      ],
+      "probes": [
+        "Is every-key-cycle sufficient?",
+        "What if the vehicle runs continuously?",
+        "How do false positives affect safety?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clause 8",
+        "ISO 26262-7 operation/service"
+      ]
+    },
+    {
+      "id": "D6Q9",
+      "day": 6,
+      "tier": "Advanced",
+      "tracks": [
+        "Hardware",
+        "Fault Injection",
+        "Verification"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "How would you demonstrate diagnostic coverage for a wheel-speed input path?",
+      "answer": [
+        "Define faults across sensor, wiring, supply, acquisition, memory and communication.",
+        "Map failure modes to mechanisms and expected reaction.",
+        "Combine analysis, simulation and physical fault injection.",
+        "Measure timing, false detection, degraded behavior and coverage gaps.",
+        "Use evidence to update FMEDA and metrics."
+      ],
+      "probes": [
+        "Which faults cannot be physically injected?",
+        "How are intermittent faults tested?",
+        "What is a representative sample?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clauses 7–10",
+        "ISO 26262-11 fault injection"
+      ]
+    },
+    {
+      "id": "D6Q10",
+      "day": 6,
+      "tier": "Advanced",
+      "tracks": [
+        "Hardware",
+        "Review"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What red flags do you look for in an FMEDA or PMHF report?",
+      "answer": [
+        "Untraceable failure-rate sources and arbitrary failure-mode distributions.",
+        "Optimistic coverage, missing dependencies, wrong classification or ignored transients.",
+        "Assumptions not implemented in HSR/HSI/software or service.",
+        "Item targets copied directly to components without justified allocation.",
+        "Mismatch between analyzed and released configuration and no sensitivity analysis."
+      ],
+      "probes": [
+        "How do you challenge 99% coverage?",
+        "What supplier evidence is needed?",
+        "When is conservative allocation appropriate?"
+      ],
+      "refs": [
+        "ISO 26262-5 Clauses 8–9",
+        "ISO 26262-11"
+      ]
+    },
+    {
+      "id": "D7Q1",
+      "day": 7,
+      "tier": "Foundation",
+      "tracks": [
+        "Software",
+        "Requirements"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "How are software safety requirements derived and what attributes matter?",
+      "answer": [
+        "Derive SSRs from TSR allocation, including behavior, timing, modes, interfaces and reactions.",
+        "Assign ASIL, source, rationale, allocation and verification method.",
+        "Include HSI, hardware-mechanism, configuration and external-component constraints.",
+        "Specify range, freshness, initialization and degraded behavior.",
+        "Verify completeness before architecture design."
+      ],
+      "probes": [
+        "Can an SSR be “implement algorithm X”?",
+        "Where are calibration constraints?",
+        "How is timing expressed?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 6"
+      ]
+    },
+    {
+      "id": "D7Q2",
+      "day": 7,
+      "tier": "Foundation",
+      "tracks": [
+        "Software",
+        "Architecture"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What qualities should ESC software safety architecture demonstrate?",
+      "answer": [
+        "Clear decomposition, interfaces, control/data flow and SSR allocation.",
+        "Fault containment, FFI and controlled shared resources.",
+        "Sufficiently independent monitoring and deterministic fault reaction.",
+        "Scheduling feasibility, communication integrity, diagnostics and configuration control.",
+        "Traceability to analyses and verification."
+      ],
+      "probes": [
+        "Where should arbitration live?",
+        "How are monitor and controller separated?",
+        "What is AUTOSAR OS protection evidence?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 7"
+      ]
+    },
+    {
+      "id": "D7Q3",
+      "day": 7,
+      "tier": "Intermediate",
+      "tracks": [
+        "Software",
+        "Freedom from Interference"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "How are memory, timing, execution and communication interference controlled?",
+      "answer": [
+        "Use MPU/MMU, privilege, stack and DMA controls for memory.",
+        "Use budgets, priorities, scheduling analysis, execution monitoring and overload policy for timing.",
+        "Use typed interfaces, E2E, freshness, queue limits and state checks for communication.",
+        "Control shared services, locks and deadlock behavior.",
+        "Verify configuration and fault behavior under stress."
+      ],
+      "probes": [
+        "How does priority inversion matter?",
+        "Can buffer overflow violate FFI?",
+        "What if DMA bypasses MPU?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 7 and Annex D"
+      ]
+    },
+    {
+      "id": "D7Q4",
+      "day": 7,
+      "tier": "Intermediate",
+      "tracks": [
+        "Software",
+        "Safety Mechanisms",
+        "ESC"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Design a software safety monitor for an ESC yaw-moment request.",
+      "answer": [
+        "Check activation, magnitude, rate, sign, duration and consistency with driver and vehicle state.",
+        "Use simplified or diverse constraints rather than duplicate controller logic.",
+        "Protect monitor inputs and timing and provide an independent inhibit path.",
+        "Define debounce, reaction, recovery and degraded state.",
+        "Analyze shared specification, data, calibration and runtime dependencies."
+      ],
+      "probes": [
+        "How independent is the same model in another task?",
+        "How do limits avoid false inhibition?",
+        "How is monitor calibration controlled?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 7",
+        "ISO 26262-9 Clauses 7–8"
+      ]
+    },
+    {
+      "id": "D7Q5",
+      "day": 7,
+      "tier": "Intermediate",
+      "tracks": [
+        "Software",
+        "Unit Design",
+        "Coding"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Which design and coding practices matter for ASIL-C/D control software?",
+      "answer": [
+        "Use low complexity, modularity, restricted features, explicit state and defensive interfaces.",
+        "Avoid undefined behavior; control arithmetic, loops, concurrency and resource use.",
+        "Apply static analysis, coding guidelines, review and traceability.",
+        "Specify initialization, error handling and corrupted configuration behavior.",
+        "Choose methods by objective and ASIL, not checklist ritual."
+      ],
+      "probes": [
+        "How are floating-point exceptions handled?",
+        "When does defensive programming mask faults?",
+        "What changes with generated code?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 8"
+      ]
+    },
+    {
+      "id": "D7Q6",
+      "day": 7,
+      "tier": "Intermediate",
+      "tracks": [
+        "Software",
+        "Unit Verification"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What roles do requirements tests, structural coverage, static analysis and fault injection play?",
+      "answer": [
+        "Requirements tests show specified behavior and boundaries.",
+        "Structural coverage reveals untested implementation but not missing requirements.",
+        "Static analysis finds data/control-flow defects and runtime risks.",
+        "Fault injection tests defensive and safety-mechanism behavior.",
+        "Combine methods with appropriate independence and tool confidence."
+      ],
+      "probes": [
+        "What about unreachable code?",
+        "Is MC/DC sufficient?",
+        "How are generated-code tests selected?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clause 9"
+      ]
+    },
+    {
+      "id": "D7Q7",
+      "day": 7,
+      "tier": "Advanced",
+      "tracks": [
+        "Software",
+        "Integration",
+        "Timing"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "A brake task misses deadlines only when diagnostics and CAN logging are active. How do you respond?",
+      "answer": [
+        "Measure worst-case scheduling, interrupts, locks, DMA, cache and bus load.",
+        "Assess the miss against fault-handling and FTTI budgets.",
+        "Analyze temporal interference and priority inversion.",
+        "Partition resources, reduce non-safety load or define deterministic overload behavior.",
+        "Update timing, FFI evidence, regression tests and safety case."
+      ],
+      "probes": [
+        "Is increasing priority enough?",
+        "How do you avoid instrumentation effects?",
+        "What if only one variant fails?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clauses 7 and 10",
+        "ISO 26262-4 timing"
+      ]
+    },
+    {
+      "id": "D7Q8",
+      "day": 7,
+      "tier": "Advanced",
+      "tracks": [
+        "Software",
+        "Model-Based Development",
+        "SysML"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "How do model-based development and code generation change the evidence strategy?",
+      "answer": [
+        "Control the model as a development artifact with guidelines, review and traceability.",
+        "Define solver, sample time, numerical and fixed-point assumptions.",
+        "Evaluate or qualify tools, or compensate with independent verification.",
+        "Verify generated code, target behavior and handwritten integration.",
+        "Baseline model, generator, libraries, configuration and compiler together."
+      ],
+      "probes": [
+        "Can simulation replace target tests?",
+        "What is back-to-back testing?",
+        "How is model coverage used?"
+      ],
+      "refs": [
+        "ISO 26262-6 Annex B",
+        "ISO 26262-8 Clause 11"
+      ]
+    },
+    {
+      "id": "D7Q9",
+      "day": 7,
+      "tier": "Advanced",
+      "tracks": [
+        "Software",
+        "Tool Confidence",
+        "Verification"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "When does a tool need confidence evaluation or qualification?",
+      "answer": [
+        "Assess whether tool failure can introduce or fail to detect an error in a safety work product.",
+        "Assess confidence that downstream measures detect such errors.",
+        "Select analysis, increased confidence from use, process evaluation, validation or qualification.",
+        "Define exact version, configuration, use case and environment.",
+        "Reassess after upgrades or changed use."
+      ],
+      "probes": [
+        "Does every compiler need qualification?",
+        "What about an export script?",
+        "Can review compensate for a tool?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 11"
+      ]
+    },
+    {
+      "id": "D7Q10",
+      "day": 7,
+      "tier": "Advanced",
+      "tracks": [
+        "Software",
+        "Review",
+        "Brakes"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What questions belong in a brake software safety architecture review?",
+      "answer": [
+        "Are SSRs allocated and traced and are controller, monitor and arbitration separated?",
+        "Are memory, timing and communication interference controlled?",
+        "Are startup, reset, degraded, recovery and shutdown behaviors defined?",
+        "Are validity, units, freshness and calibrations controlled?",
+        "Can OS, stack, bootloader or monitor faults defeat the concept?",
+        "Are WCET and FTTI budgets consistent?",
+        "Do FMEA/DFA findings map to mechanisms and tests?",
+        "Are variants, toolchain assumptions and anomalies controlled?"
+      ],
+      "probes": [
+        "Which finding blocks integration?",
+        "How is AUTOSAR configuration reviewed?",
+        "What enters the safety case?"
+      ],
+      "refs": [
+        "ISO 26262-6 Clauses 6–11"
+      ]
+    },
+    {
+      "id": "D8Q1",
+      "day": 8,
+      "tier": "Foundation",
+      "tracks": [
+        "Brakes",
+        "ESC",
+        "Control Functions"
+      ],
+      "kind": "Concept",
+      "minutes": 4,
+      "question": "Differentiate base braking, brake assist, ABS, traction control and ESC by control objective and actuator use.",
+      "answer": [
+        "Base braking converts driver demand into deceleration.",
+        "Brake assist increases pressure when emergency intent is detected.",
+        "ABS regulates braking slip to preserve steerability and deceleration.",
+        "Traction control limits driven-wheel slip using brakes and/or engine torque.",
+        "ESC compares intended and actual motion and creates corrective yaw moment using selective braking and torque control."
+      ],
+      "probes": [
+        "Which can brake without pedal input?",
+        "Which sensors are shared?",
+        "Which failure has highest unintended-actuation risk?"
+      ],
+      "refs": [
+        "Brake/ESC domain mapped to ISO 26262 Parts 3–4"
+      ]
+    },
+    {
+      "id": "D8Q2",
+      "day": 8,
+      "tier": "Foundation",
+      "tracks": [
+        "ESC",
+        "Vehicle Dynamics",
+        "Control Functions"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What signals and models estimate desired versus actual yaw behavior?",
+      "answer": [
+        "Use steering, speed, yaw rate, lateral acceleration and wheel speeds; pressure and longitudinal acceleration support plausibility.",
+        "A reference model estimates desired response; state estimation handles sideslip, noise and bias.",
+        "Understand validity domains: low speed, reverse, bank, split friction, tires and saturation.",
+        "Coordinate frames, sign convention, timing and calibration are safety-relevant interfaces."
+      ],
+      "probes": [
+        "What if vehicle speed is wrong?",
+        "How is sideslip estimated?",
+        "Why is a sign mismatch dangerous?"
+      ],
+      "refs": [
+        "Vehicle-dynamics domain",
+        "ISO 26262-4 interfaces"
+      ]
+    },
+    {
+      "id": "D8Q3",
+      "day": 8,
+      "tier": "Intermediate",
+      "tracks": [
+        "ESC",
+        "Vehicle Dynamics"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "Explain understeer and oversteer and how ESC intervention differs.",
+      "answer": [
+        "Understeer means less turn response than intended; oversteer means excessive rotation.",
+        "ESC chooses wheel braking and torque actions to create corrective yaw moment.",
+        "Limits on magnitude, rate and duration prevent the safety action from creating another hazard.",
+        "Wrong wheel, sign or state estimate can amplify instability."
+      ],
+      "probes": [
+        "Why is wrong-wheel braking hazardous?",
+        "How do banked roads affect estimation?",
+        "What is engine torque reduction for?"
+      ],
+      "refs": [
+        "Vehicle-dynamics domain",
+        "ISO 26262-3/4"
+      ]
+    },
+    {
+      "id": "D8Q4",
+      "day": 8,
+      "tier": "Intermediate",
+      "tracks": [
+        "Control Functions",
+        "System Architecture",
+        "ESC"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Trace one ESC intervention from driver input to hydraulic pressure and mark safety-relevant decisions.",
+      "answer": [
+        "Acquire, validate and time-align steering and motion signals.",
+        "Estimate vehicle state and desired response and detect instability.",
+        "Calculate yaw/wheel requests and arbitrate with ABS, TCS, ADAS and driver braking.",
+        "Pass commands through monitoring/inhibit to driver electronics and hydraulics.",
+        "Monitor pressure/vehicle response and update diagnostics, degraded state and HMI.",
+        "Specify timing and failure behavior at every boundary."
+      ],
+      "probes": [
+        "Where is the highest-risk single point?",
+        "How does AEB arbitration interact?",
+        "What confirms execution?"
+      ],
+      "refs": [
+        "ISO 26262-4 TSC/architecture",
+        "ISO 26262-9 analyses"
+      ]
+    },
+    {
+      "id": "D8Q5",
+      "day": 8,
+      "tier": "Intermediate",
+      "tracks": [
+        "Brakes",
+        "Sensors",
+        "Plausibility"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Develop plausibility concepts for wheel speed, steering angle, yaw rate and brake pressure.",
+      "answer": [
+        "Combine electrical diagnostics with range, rate and freshness checks.",
+        "Cross-compare redundant channels and diverse vehicle-dynamics relationships.",
+        "Define operating domains and thresholds including sensor tolerance and timing skew.",
+        "Use diverse sources for correlated/common failures.",
+        "Link detection to reaction, degraded behavior, warning and evidence."
+      ],
+      "probes": [
+        "How are false faults avoided on split-µ?",
+        "What works at standstill?",
+        "How are thresholds calibrated safely?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 4–6",
+        "ISO 26262-9"
+      ]
+    },
+    {
+      "id": "D8Q6",
+      "day": 8,
+      "tier": "Advanced",
+      "tracks": [
+        "Brakes",
+        "HARA",
+        "Unintended Braking"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "At 100 km/h one rear wheel receives a strong 300 ms brake command without driver demand. Analyze end to end.",
+      "answer": [
+        "Hazards include unintended yaw/deceleration, loss of control and rear collision; classify situations and S/E/C.",
+        "Causes span computation, wheel mapping, arbitration, CAN, driver electronics and mechanical valve.",
+        "Mechanisms include request envelope, wheel consistency, independent inhibit, current/pressure and yaw/deceleration feedback.",
+        "Detection, inhibition and pressure decay must fit the dynamics-derived FTTI.",
+        "Use FMEA/FTA/DFA, HIL and controlled proving-ground fault tests."
+      ],
+      "probes": [
+        "How does friction change FTTI?",
+        "What if pressure feedback also fails?",
+        "What degraded state is acceptable?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 3,4,9",
+        "Brake/ESC domain"
+      ]
+    },
+    {
+      "id": "D8Q7",
+      "day": 8,
+      "tier": "Advanced",
+      "tracks": [
+        "Brakes",
+        "Availability",
+        "Control Functions"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "A yaw-rate sensor fails during a low-friction curve. What remains, degrades or disables?",
+      "answer": [
+        "ESC likely degrades or disables; base braking and ABS may remain with independent inputs.",
+        "Substitute estimates require justified accuracy, domain and independence.",
+        "Prevent false intervention, preserve driver braking and warn the driver.",
+        "Consider whether immediate disablement during active instability creates risk.",
+        "Validate transitions, intermittent recovery, combined faults and controllability."
+      ],
+      "probes": [
+        "Can lateral acceleration substitute?",
+        "Should TCS remain?",
+        "What if the fault is intermittent?"
+      ],
+      "refs": [
+        "ISO 26262-3 FSC",
+        "ISO 26262-4 TSC/validation"
+      ]
+    },
+    {
+      "id": "D8Q8",
+      "day": 8,
+      "tier": "Advanced",
+      "tracks": [
+        "Brakes",
+        "ESC",
+        "Validation"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "How would you test safety behavior on split-µ braking and acceleration?",
+      "answer": [
+        "Cover speed, load, tire, temperature and friction asymmetry in normal and faulted cases.",
+        "Measure yaw, lateral deviation, slip, pressure, timing, warning and controllability.",
+        "Inject bias, dropout, delay, wrong friction estimate and actuator faults at critical phases.",
+        "Verify ABS/TCS/ESC arbitration and degraded transitions.",
+        "Use MIL/SIL/HIL before controlled proving-ground testing."
+      ],
+      "probes": [
+        "What are pass/fail criteria?",
+        "How is test safety assured?",
+        "Which is the worst phase for injection?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clauses 7–8"
+      ]
+    },
+    {
+      "id": "D8Q9",
+      "day": 8,
+      "tier": "Advanced",
+      "tracks": [
+        "CAN",
+        "ESC",
+        "Control Functions"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "An ESC torque-reduction request is delayed, duplicated or replayed on CAN. What protections are needed?",
+      "answer": [
+        "Define timeout, alive counter, data ID, E2E/CRC, initialization and sender/receiver state.",
+        "Check freshness, magnitude, rate and plausibility against driver and engine state.",
+        "Specify behavior for missing, stale, repeated and corrupted messages.",
+        "Analyze gateway, stack, overload, reset and bus-off dependencies.",
+        "Verify under realistic network load."
+      ],
+      "probes": [
+        "Is frame CRC sufficient?",
+        "How is valid-but-wrong data found?",
+        "What happens after bus-off?"
+      ],
+      "refs": [
+        "ISO 26262-4 interfaces",
+        "ISO 26262-6 architecture",
+        "Job focus CAN"
+      ]
+    },
+    {
+      "id": "D8Q10",
+      "day": 8,
+      "tier": "Advanced",
+      "tracks": [
+        "Brakes",
+        "ESC",
+        "Senior Interview"
+      ],
+      "kind": "Case Study",
+      "minutes": 7,
+      "question": "Design the top-level functional-safety concept for an integrated brake and ESC controller.",
+      "answer": [
+        "Define item boundary and hazards: unintended, insufficient or asymmetric braking, unsafe yaw and transitions.",
+        "Create goals with availability and timing needs.",
+        "Use sensing plausibility, request limits/arbitration, independent inhibit, feedback, degradation and warning.",
+        "Allocate to sensing, control, hydraulics, power, communication and HMI.",
+        "Define validation criteria and analyses needed to prove the concept."
+      ],
+      "probes": [
+        "What is likely ASIL D?",
+        "Where could decomposition apply?",
+        "How do ADAS brake requests interact?"
+      ],
+      "refs": [
+        "ISO 26262-3 Clause 7",
+        "ISO 26262-4 Clause 6"
+      ]
+    },
+    {
+      "id": "D9Q1",
+      "day": 9,
+      "tier": "Foundation",
+      "tracks": [
+        "Verification",
+        "Validation",
+        "FSM"
+      ],
+      "kind": "Comparison",
+      "minutes": 4,
+      "question": "Differentiate verification and safety validation using braking examples.",
+      "answer": [
+        "Verification asks whether a work product satisfies its specified requirements.",
+        "Safety validation asks whether the integrated item achieves safety goals in representative vehicle context.",
+        "A monitor unit test verifies an SSR; a faulted vehicle test validates hazardous unintended braking control.",
+        "Both require planned criteria, configuration and suitable independence."
+      ],
+      "probes": [
+        "Can HIL perform validation?",
+        "What is requirements validation?",
+        "Who approves results?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clauses 7–8",
+        "ISO 26262-8 Clause 9"
+      ]
+    },
+    {
+      "id": "D9Q2",
+      "day": 9,
+      "tier": "Foundation",
+      "tracks": [
+        "Verification",
+        "Integration"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What are the objectives at hardware-software, system, item and vehicle integration levels?",
+      "answer": [
+        "HW/SW integration verifies HSI, drivers, diagnostics, timing and target reaction.",
+        "System integration verifies interacting elements and TSRs.",
+        "Item/vehicle integration verifies external interfaces, dynamics and operating conditions.",
+        "Fault injection grows from local mechanisms to end-to-end behavior.",
+        "Test each fault at the level where it is observable and realistic."
+      ],
+      "probes": [
+        "Where is wrong wheel mapping tested?",
+        "Where is FTTI finally confirmed?",
+        "How are supplier tests reused?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 7",
+        "ISO 26262-5 Clause 10",
+        "ISO 26262-6 Clauses 10–11"
+      ]
+    },
+    {
+      "id": "D9Q3",
+      "day": 9,
+      "tier": "Intermediate",
+      "tracks": [
+        "Verification",
+        "Test Strategy",
+        "Job Focus"
+      ],
+      "kind": "Practical",
+      "minutes": 6,
+      "question": "Build a V&V strategy for an ESC safety requirement from model to vehicle.",
+      "answer": [
+        "Review requirements/architecture and use MIL for logic and fault cases.",
+        "Use SIL and back-to-back tests for code and numerical behavior.",
+        "Use HIL for ECU timing, CAN, diagnostics and fault injection.",
+        "Use rigs and vehicle for hydraulic, environment, interaction and controllability.",
+        "Define coverage, variants, regression, independence and evidence links."
+      ],
+      "probes": [
+        "Which tests cannot move to HIL?",
+        "How are fault cases selected?",
+        "What are vehicle-test entry criteria?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 4–6",
+        "Job focus V&V"
+      ]
+    },
+    {
+      "id": "D9Q4",
+      "day": 9,
+      "tier": "Intermediate",
+      "tracks": [
+        "Verification",
+        "Acceptance Criteria",
+        "Brakes"
+      ],
+      "kind": "Practical",
+      "minutes": 5,
+      "question": "Write acceptance criteria for inhibiting unintended brake pressure after a fault.",
+      "answer": [
+        "State initial condition and injected fault.",
+        "Define detection/reaction time and maximum pressure, deceleration and yaw excursion.",
+        "Define required actuator state, warning, DTC, degraded functions and recovery.",
+        "Specify measurement uncertainty, repetition, variants and environment.",
+        "Trace limits to safety analysis and vehicle dynamics."
+      ],
+      "probes": [
+        "How is uncertainty handled?",
+        "What about a brief limit exceedance?",
+        "How is pass/fail automated?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 9",
+        "ISO 26262-4 Clauses 7–8"
+      ]
+    },
+    {
+      "id": "D9Q5",
+      "day": 9,
+      "tier": "Intermediate",
+      "tracks": [
+        "Fault Injection",
+        "Verification"
+      ],
+      "kind": "Workshop",
+      "minutes": 6,
+      "question": "Create a fault-injection matrix for an ESC ECU.",
+      "answer": [
+        "Rows include sensor faults, stale/corrupt CAN, CPU/memory, timing, power/clock/reset, actuator and monitor faults.",
+        "Columns include mode, point, phase, duration, expected detection, reaction, FTTI margin, warning and test level.",
+        "Cover single, selected combined and dependent scenarios.",
+        "Choose MIL/SIL/HIL/bench/vehicle by observability and safety.",
+        "Trace to FMEA/FTA/DFA and record actual gaps."
+      ],
+      "probes": [
+        "How are combinations prioritized?",
+        "Which are unsafe on vehicle?",
+        "How is the injection tool verified?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 4–6",
+        "ISO 26262-11 fault injection"
+      ]
+    },
+    {
+      "id": "D9Q6",
+      "day": 9,
+      "tier": "Advanced",
+      "tracks": [
+        "CAN",
+        "System Architecture",
+        "Verification"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "How do you engineer and validate a CAN signal carrying brake torque or wheel speed?",
+      "answer": [
+        "Define sender, receiver, rate, deadline, timeout, units, scaling, invalid values and initialization.",
+        "Apply E2E/freshness mechanisms; frame CRC alone misses repetition, masquerade and valid-wrong data.",
+        "Use plausibility, arbitration, bus-load analysis and bus-off recovery.",
+        "Analyze stack, gateway and shared-bus dependencies.",
+        "Test loss, delay, corruption, duplication, overload, reset and variant configuration."
+      ],
+      "probes": [
+        "How is masquerade detected?",
+        "What is timeout behavior?",
+        "What if two senders exist?"
+      ],
+      "refs": [
+        "ISO 26262-4 interfaces",
+        "ISO 26262-6 architecture/integration",
+        "Job focus CAN"
+      ]
+    },
+    {
+      "id": "D9Q7",
+      "day": 9,
+      "tier": "Advanced",
+      "tracks": [
+        "OBD",
+        "Diagnostics",
+        "Brakes"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "What is the relationship and distinction between OBD and functional-safety diagnostics?",
+      "answer": [
+        "OBD is regulatory/service monitoring and reporting; safety diagnostics control faults relevant to goals within timing.",
+        "DTC storage is not the safety reaction.",
+        "Safety mechanisms can expose status to OBD after taking timely action.",
+        "Service clear and actuator tests must not defeat safe state or evidence.",
+        "Repair time and warning assumptions must be explicit."
+      ],
+      "probes": [
+        "Can an OBD monitor claim coverage?",
+        "What if DTC memory is full?",
+        "How are service actuator tests made safe?"
+      ],
+      "refs": [
+        "ISO 26262-7 operation/service",
+        "ISO 26262-8 supporting interfaces",
+        "Job focus OBD"
+      ]
+    },
+    {
+      "id": "D9Q8",
+      "day": 9,
+      "tier": "Advanced",
+      "tracks": [
+        "Production",
+        "Service",
+        "Brakes"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "What production and service controls are safety-relevant for brake/ESC?",
+      "answer": [
+        "Control hardware/software/calibration variant, EOL test, coding, calibration and traceability.",
+        "Use validated replacement parts, diagnostic procedures, updates and post-repair tests.",
+        "Provide driver information, maintenance assumptions and field anomaly monitoring.",
+        "Ensure decommissioning cannot create unintended actuation or stored-energy hazards.",
+        "Feed field findings into anomaly and change management."
+      ],
+      "probes": [
+        "What if wrong tire size is coded?",
+        "How is ECU replacement validated?",
+        "Which service act can violate an AoU?"
+      ],
+      "refs": [
+        "ISO 26262-7 Clauses 5–7"
+      ]
+    },
+    {
+      "id": "D9Q9",
+      "day": 9,
+      "tier": "Advanced",
+      "tracks": [
+        "Safety Validation",
+        "Brakes",
+        "Human Factors"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "Design safety validation for loss of ESC and unintended ESC intervention.",
+      "answer": [
+        "Map every goal to representative and worst-reasonable situations, variants and environment.",
+        "Inject faults at critical maneuver phases and include degraded transitions and warnings.",
+        "Measure yaw, lateral deviation, deceleration, pressure, timing and controllability.",
+        "Use safe test execution, calibrated instrumentation and exact release configuration.",
+        "Address deviations and residual risks in the safety case."
+      ],
+      "probes": [
+        "How are rare situations validated?",
+        "How much driver testing is enough?",
+        "Can simulation support evidence?"
+      ],
+      "refs": [
+        "ISO 26262-4 Clause 8"
+      ]
+    },
+    {
+      "id": "D9Q10",
+      "day": 9,
+      "tier": "Advanced",
+      "tracks": [
+        "Verification",
+        "Release",
+        "Review"
+      ],
+      "kind": "Review",
+      "minutes": 5,
+      "question": "What evidence must be complete before recommending release of an ASIL-D brake ECU?",
+      "answer": [
+        "Approved safety plan and controlled work products with confirmation findings addressed.",
+        "End-to-end traceability for exact hardware/software/calibration configuration.",
+        "Completed FMEA/FTA/DFA, metrics/PMHF and verified assumptions.",
+        "Successful integration, fault injection and safety validation with justified deviations.",
+        "Supplier, tool, production/service and configuration evidence plus coherent safety case.",
+        "Authorized disposition of open anomalies and residual risk."
+      ],
+      "probes": [
+        "What can be conditional?",
+        "Who signs release?",
+        "How is a failed non-safety test treated?"
+      ],
+      "refs": [
+        "ISO 26262-2 release/assessment",
+        "ISO 26262 Parts 4–9"
+      ]
+    },
+    {
+      "id": "D10Q1",
+      "day": 10,
+      "tier": "Intermediate",
+      "tracks": [
+        "FSM",
+        "Leadership",
+        "Planning"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "You join a late ASIL-D brake project with no credible safety plan. What do you do first?",
+      "answer": [
+        "Establish scope, goals, phase, configuration, organizations, suppliers and evidence.",
+        "Perform a gap/risk assessment separating product safety risk from documentation debt.",
+        "Create a recovery plan with roles, milestones, work products, confirmation measures and escalation.",
+        "Prioritize HARA, architecture, requirements and analysis gaps that invalidate downstream tests.",
+        "Set transparent release criteria and decision records."
+      ],
+      "probes": [
+        "What do you stop immediately?",
+        "How is schedule impact communicated?",
+        "Which review comes first?"
+      ],
+      "refs": [
+        "ISO 26262-2 Clause 6"
+      ]
+    },
+    {
+      "id": "D10Q2",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Safety Case",
+        "Leadership"
+      ],
+      "kind": "Case Study",
+      "minutes": 6,
+      "question": "Present a top-level safety-case argument for no hazardous unintended braking.",
+      "answer": [
+        "Claim controlled unintended braking risk in defined situations.",
+        "Subclaims cover risk analysis, safety concept, systematic faults, random hardware, timing, integration, validation and lifecycle controls.",
+        "Evidence includes HARA, requirements, architecture, FMEA/FTA/DFA, metrics and tests.",
+        "Context includes boundary, variants, assumptions and degraded states.",
+        "Address residual anomalies, evidence confidence and independent assessment."
+      ],
+      "probes": [
+        "Which subclaim is usually weakest?",
+        "How is completeness argued?",
+        "What evidence would you reject?"
+      ],
+      "refs": [
+        "ISO 26262-2 safety case",
+        "ISO 26262-10 Clause 5.3"
+      ]
+    },
+    {
+      "id": "D10Q3",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Assessment",
+        "FSM",
+        "Leadership"
+      ],
+      "kind": "Scenario",
+      "minutes": 5,
+      "question": "An assessor finds incomplete traceability although all tests pass. How do you respond?",
+      "answer": [
+        "Passing tests do not prove that all safety requirements and scenarios were identified.",
+        "Determine whether links are missing only administratively or reveal missing requirements/tests.",
+        "Perform semantic reconciliation, impact analysis and targeted re-verification.",
+        "Correct systemic causes and update the safety case.",
+        "Base release on safety impact and closure evidence, not negotiation."
+      ],
+      "probes": [
+        "When is document correction enough?",
+        "How is recurrence prevented?",
+        "What if release is tomorrow?"
+      ],
+      "refs": [
+        "ISO 26262-2 assessment/release",
+        "ISO 26262-8 requirements"
+      ]
+    },
+    {
+      "id": "D10Q4",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Tailoring",
+        "FSM",
+        "Leadership"
+      ],
+      "kind": "Concept",
+      "minutes": 5,
+      "question": "How do you justify tailoring or an alternative method without weakening safety?",
+      "answer": [
+        "Start from the objective of the requirement rather than convenience.",
+        "Explain applicability, context, risk and equivalent confidence.",
+        "Provide evidence and appropriate independent evaluation.",
+        "Record the decision in plan/case and update affected work products.",
+        "Revisit after assumptions, variants or context change."
+      ],
+      "probes": [
+        "Can agile justify omission?",
+        "What makes a noncompliance rationale acceptable?",
+        "Who approves tailoring?"
+      ],
+      "refs": [
+        "ISO 26262 Clause 4",
+        "ISO 26262-2 tailoring"
+      ]
+    },
+    {
+      "id": "D10Q5",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Supplier",
+        "Leadership",
+        "DIA"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "A supplier misses safety work products and cites proprietary restrictions. How do you protect the program?",
+      "answer": [
+        "Use DIA and acceptance criteria to distinguish needed assurance from protected design details.",
+        "Request summaries, independent reports, safety manuals, interface evidence or controlled review access.",
+        "Track and escalate risk and develop architecture or supplier contingencies.",
+        "Do not accept a certificate as substitute for item-specific evidence.",
+        "Document assumptions and gaps for release governance."
+      ],
+      "probes": [
+        "When do you stop integration?",
+        "Can clean-room review help?",
+        "Who owns supplier assessment?"
+      ],
+      "refs": [
+        "ISO 26262-8 Clause 5",
+        "ISO 26262-2 distributed management"
+      ]
+    },
+    {
+      "id": "D10Q6",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "System Architecture",
+        "Leadership",
+        "ESC"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "Choose between dual MCU and a single safety MCU for ESC. How do you decide?",
+      "answer": [
+        "Begin with goals, availability, FTTI, independence and containment.",
+        "Compare common-cause exposure, random metrics, power/clock dependencies, diversity and inhibit paths.",
+        "Assess complexity, latency, verification, cost, service and supplier capability.",
+        "Use FTA/DFA and quantitative analysis including latent faults and degraded modes.",
+        "Document trade-offs and evidence strategy; either can work if objectives are proven."
+      ],
+      "probes": [
+        "When is dual MCU worse?",
+        "Can lockstep replace a monitor?",
+        "How is PMHF allocated?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 4,5,9",
+        "Job focus architecture"
+      ]
+    },
+    {
+      "id": "D10Q7",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Release",
+        "Safety Anomalies",
+        "Leadership"
+      ],
+      "kind": "Scenario",
+      "minutes": 6,
+      "question": "A rare HIL test exceeds reaction time by 20 ms but shows no vehicle instability. Release or block?",
+      "answer": [
+        "Validate result and configuration and compare total worst-case handling with FTTI.",
+        "Determine whether the requirement, implementation or measurement assumption is wrong.",
+        "Assess hazards, variants and combined delays and use targeted vehicle dynamics evidence.",
+        "A requirement cannot be relaxed retrospectively without controlled impact and re-verification.",
+        "Block release when margin or evidence is insufficient."
+      ],
+      "probes": [
+        "What evidence could justify release?",
+        "How is uncertainty handled?",
+        "Who accepts residual risk?"
+      ],
+      "refs": [
+        "ISO 26262-2 anomaly/release",
+        "ISO 26262-8 change/verification"
+      ]
+    },
+    {
+      "id": "D10Q8",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Leadership",
+        "Competence",
+        "FSM"
+      ],
+      "kind": "Behavioral",
+      "minutes": 5,
+      "question": "How do you build functional-safety competence across a multidisciplinary team?",
+      "answer": [
+        "Define role-based competency needs for system, hardware, software, test, manufacturing and suppliers.",
+        "Assess competence and close gaps through training, mentoring, paired review and supervised work.",
+        "Use domain case studies and recurring technical reviews rather than certificate-only training.",
+        "Protect independent challenge and anomaly transparency.",
+        "Track effectiveness through review quality and escaped defects."
+      ],
+      "probes": [
+        "How is competence assessed?",
+        "Which tasks require an expert?",
+        "How do you onboard an experienced engineer new to ISO 26262?"
+      ],
+      "refs": [
+        "ISO 26262-2 competence and safety culture"
+      ]
+    },
+    {
+      "id": "D10Q9",
+      "day": 10,
+      "tier": "Advanced",
+      "tracks": [
+        "Leadership",
+        "Stakeholders",
+        "Job Focus"
+      ],
+      "kind": "Behavioral",
+      "minutes": 5,
+      "question": "How do you explain a safety architecture trade-off to executives, control engineers and assessors?",
+      "answer": [
+        "Keep one core message: risk, objective, options, evidence and decision.",
+        "Executives need impact, residual risk, cost/schedule and authority.",
+        "Engineers need interfaces, failure scenarios, timing and verification actions.",
+        "Assessors need objectives, assumptions, traceability, independence and evidence.",
+        "Separate facts, assumptions and judgment and show uncertainty clearly."
+      ],
+      "probes": [
+        "What belongs in a decision record?",
+        "How is disagreement handled?",
+        "How do you present uncertainty?"
+      ],
+      "refs": [
+        "Job focus stakeholder leadership",
+        "ISO 26262-2"
+      ]
+    },
+    {
+      "id": "D10Q10",
+      "day": 10,
+      "tier": "Expert",
+      "tracks": [
+        "Senior Interview",
+        "Brakes",
+        "ESC",
+        "End-to-End"
+      ],
+      "kind": "Mock Interview",
+      "minutes": 10,
+      "question": "End-to-end case: develop the safety approach for a brake-by-wire and ESC platform shared across vehicle lines.",
+      "answer": [
+        "Clarify item, variants, driver/ADAS requests, mechanical fallback, power and network architecture.",
+        "Identify unintended/lost/asymmetric braking, unsafe yaw, availability and transition hazards and derive goals.",
+        "Create FSC/TSC with fault tolerance, sensing, arbitration, monitoring/inhibit, degradation and warning.",
+        "Allocate HSR/SSR/HSI and handle MCU AoU, FFI, CAN E2E, diagnostics and supplier DIA.",
+        "Perform FMEA/FTA/DFA, decomposition evaluation, SPFM/LFM/PMHF and timing analysis.",
+        "Plan MIL/SIL/HIL/rig/vehicle V&V, production/service, safety case and assessment.",
+        "State trade-offs, assumptions, open risks and release governance."
+      ],
+      "probes": [
+        "What is likely ASIL D?",
+        "How is braking maintained after power fault?",
+        "What evidence convinces you to release?"
+      ],
+      "refs": [
+        "ISO 26262 Parts 2–9",
+        "ISO 26262-10/11 guidance",
+        "Job-description focus"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Which artifact is derived most directly from an ASIL-rated hazardous event?",
+      "options": [
+        "HSR",
+        "Safety goal",
+        "Software architecture",
+        "DTC"
+      ],
+      "answer": 1,
+      "why": "HARA derives safety goals from ASIL-rated hazardous events."
+    },
+    {
+      "q": "Which analysis is primarily top-down?",
+      "options": [
+        "FMEA",
+        "FMEDA",
+        "FTA",
+        "DFA"
+      ],
+      "answer": 2,
+      "why": "FTA starts with a top event and decomposes causal combinations."
+    },
+    {
+      "q": "A QM logger delays an ASIL-D task. What is at risk?",
+      "options": [
+        "Proven in use",
+        "Freedom from interference",
+        "Exposure",
+        "ASIL notation"
+      ],
+      "answer": 1,
+      "why": "Temporal interference can let a lower-integrity element violate a safety requirement."
+    },
+    {
+      "q": "What must be verified when integrating an SEooC?",
+      "options": [
+        "Vendor certificate only",
+        "Assumptions of Use",
+        "SPFM only",
+        "Marketing use case"
+      ],
+      "answer": 1,
+      "why": "Actual integration must satisfy or resolve the SEooC assumptions."
+    },
+    {
+      "q": "Which OBD statement is correct?",
+      "options": [
+        "DTC storage is the safety reaction",
+        "OBD replaces validation",
+        "OBD and safety diagnostics may share status but have different objectives",
+        "CAN CRC proves safety"
+      ],
+      "answer": 2,
+      "why": "Service reporting and time-critical safety control are different objectives."
+    }
+  ]
+}

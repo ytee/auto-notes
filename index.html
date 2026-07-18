@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="10-day senior automotive functional-safety interview preparation">
+<title>Automotive Functional Safety — 10-Day Senior Preparation</title>
+<link rel="stylesheet" href="assets/styles.css"></head>
+<body>
+<header class="hero"><div class="hero-inner"><div><p class="eyebrow light">SENIOR ROLE PREPARATION</p>
+<h1>Automotive Functional Safety</h1><p>10 days · 30–60 minutes/day · ISO 26262 × Brakes × ESC × Architecture</p></div>
+<div class="progress"><b id="progressText">0 / 100 complete</b><div class="bar"><i id="progressBar"></i></div></div></div></header>
+<nav class="tabs">
+<button class="tab active" data-view="plan">10-Day Plan</button><button class="tab" data-view="tracks">Topic Tracks</button>
+<button class="tab" data-view="matrix">Domain ↔ ISO</button><button class="tab" data-view="job">Job Focus</button>
+<button class="tab" data-view="mock">Mock Interview</button></nav>
+<main>
+<section class="toolbar">
+<label class="wide">Search<input id="search" type="search" placeholder="FTTI, wheel speed, decomposition…"></label>
+<label>Difficulty<select id="tierFilter"><option value="">All</option><option>Foundation</option><option>Intermediate</option><option>Advanced</option><option>Expert</option></select></label>
+<label>Track<select id="trackFilter"><option value="">All tracks</option></select></label>
+<label>Status<select id="statusFilter"><option value="">All</option><option value="open">Not complete</option><option value="done">Complete</option><option value="bookmarked">Bookmarked</option></select></label>
+<div class="timer"><b id="timer">45:00</b><button id="timerToggle">Start</button><button id="timerReset" class="secondary">Reset</button></div>
+</section>
+<section id="view-plan" class="view active">
+<div class="intro-grid"><article class="panel accent"><p class="eyebrow">METHOD</p><h2>Answer aloud before revealing guidance</h2>
+<ol><li>Structure your response for 2–4 minutes.</li><li>Use the probes as interviewer pressure.</li><li>Reveal guidance, self-rate and mark complete.</li><li>Finish the daily practical deliverable.</li></ol></article>
+<article class="panel"><p class="eyebrow">CASE STUDY</p><h2>Integrated Brake + ESC Controller</h2>
+<p>The same item is carried through HARA, FSC, TSC, SysML, FMEA/FTA/DFA, hardware/software safety, CAN/OBD and vehicle validation.</p>
+<p class="notice">Original study material with paraphrased guidance and clause pointers. It does not reproduce ISO 26262 normative text.</p></article></div>
+<div id="dayNav" class="day-nav"></div><div id="daySections"></div></section>
+<section id="view-tracks" class="view"><header class="section-head"><p class="eyebrow">TOPIC-WISE REVISION</p><h2>Study by domain without losing the ISO interface</h2></header>
+<div id="trackCards" class="track-grid"></div><div id="trackQuestionResults"></div></section>
+<section id="view-matrix" class="view"><header class="section-head"><p class="eyebrow">CORE REQUIREMENT</p><h2>Domain ↔ Standard Interface Matrix</h2></header>
+<div class="table-wrap"><table><thead><tr><th>Domain</th><th>Engineering scope</th><th>ISO interface</th><th>Senior expectation</th></tr></thead><tbody id="matrixBody"></tbody></table></div></section>
+<section id="view-job" class="view"><header class="section-head"><p class="eyebrow">ROLE ALIGNMENT</p><h2>Job-description focus map</h2></header>
+<div class="table-wrap"><table><thead><tr><th>Accountability</th><th>Preparation</th><th>Coverage</th></tr></thead><tbody id="jdBody"></tbody></table></div>
+<article class="panel job-note"><h3>Interview positioning</h3><p>Present yourself as a system-safety architecture leader who connects stakeholder needs and vehicle behavior to requirements, SysML architecture, safety analyses, implementation constraints, V&V evidence, supplier governance and release decisions.</p></article></section>
+<section id="view-mock" class="view"><header class="section-head"><p class="eyebrow">FINAL PRACTICE</p><h2>Rapid-fire check + board exercise</h2></header>
+<div id="quiz"></div><article class="panel"><h3>15-minute board exercise</h3><p><strong>Prompt:</strong> Develop the safety approach for a brake-by-wire and ESC platform shared across several vehicle lines.</p>
+<div class="mock-grid"><div><h4>Structure</h4><ol><li>Clarify item and assumptions.</li><li>Identify hazards and goals.</li><li>Propose FSC/TSC and architecture.</li><li>Explain analyses and metrics.</li><li>Plan V&V and safety case.</li><li>State trade-offs and open risks.</li></ol></div>
+<div><h4>Interviewer pressure</h4><ul><li>Power fails mid-corner.</li><li>Shared sensor defeats redundancy.</li><li>Supplier AoU is unmet.</li><li>Reaction exceeds the timing budget.</li><li>Production calibration is wrong.</li><li>Release date cannot move.</li></ul></div></div></article></section>
+</main><footer>Progress and bookmarks are stored only in the browser.</footer>
+<script src="assets/content.js"></script><script src="assets/app.js"></script></body></html>
