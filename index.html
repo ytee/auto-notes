@@ -3,52 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Modular senior automotive engineering interview preparation">
-  <title>Automotive Engineering Preparation</title>
+  <meta name="description" content="A modular automotive engineering learning platform for Functional Safety, AUTOSAR and future vehicle topics.">
+  <title>Auto Notes | Automotive Learning Cockpit</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <p id="eyebrow" class="eyebrow light">AUTOMOTIVE ENGINEERING PREPARATION</p>
-      <h1 id="topicTitle">Preparation Library</h1>
-      <p id="topicSubtitle">Choose a topic to begin.</p>
+      <p id="eyebrow" class="eyebrow light">AUTOMOTIVE LEARNING COCKPIT</p>
+      <h1 id="moduleTitle">Auto Notes</h1>
+      <p id="moduleSubtitle">Choose a vehicle subsystem to begin learning.</p>
     </div>
-    <div class="hero-actions">
-      <label class="topic-picker">Topic<select id="topicSelect"></select></label>
-      <div class="progress"><b id="progressText">0 complete</b><div class="bar"><i id="progressBar"></i></div></div>
+    <div class="hero-actions instrument-cluster">
+      <label class="topic-picker">Active subsystem<select id="moduleSelect"></select></label>
+      <div class="progress">
+        <span class="cluster-label">LEARNING ODOMETER</span>
+        <b id="progressText">0 checkpoints complete</b>
+        <div class="bar"><i id="progressBar"></i></div>
+      </div>
     </div>
   </div>
 </header>
-<nav class="tabs">
-  <button class="tab active" data-view="topics">Topics</button>
-  <button class="tab" data-view="plan">10-Day Plan</button>
-  <button class="tab" data-view="tracks">Topic Tracks</button>
-  <button class="tab" data-view="matrix">Domain Interface</button>
-  <button class="tab" data-view="focus">Focus Map</button>
-  <button class="tab" data-view="mock">Mock Interview</button>
+<nav class="tabs" aria-label="Learning cockpit navigation">
+  <button class="tab active" data-view="modules">Garage</button>
+  <button class="tab" data-view="route">10-Day Route</button>
+  <button class="tab" data-view="systems">Systems</button>
+  <button class="tab" data-view="interfaces">Interface Map</button>
+  <button class="tab" data-view="coverage">Coverage Map</button>
+  <button class="tab" data-view="validation">Validation Run</button>
 </nav>
 <main>
-<section id="view-topics" class="view active"><header class="section-head"><p class="eyebrow">PREPARATION LIBRARY</p><h2>Choose a preparation topic</h2><p>Each topic is an independent content module using the same study application.</p></header><div id="topicCards" class="topic-grid"></div></section>
-<section id="studyToolbar" class="toolbar hidden">
-  <label class="wide">Search<input id="search" type="search" placeholder="Search questions, modules, interfaces…"></label>
-  <label>Difficulty<select id="tierFilter"><option value="">All</option><option>Foundation</option><option>Intermediate</option><option>Advanced</option><option>Expert</option></select></label>
-  <label>Track<select id="trackFilter"><option value="">All tracks</option></select></label>
-  <label>Status<select id="statusFilter"><option value="">All</option><option value="open">Not complete</option><option value="done">Complete</option><option value="bookmarked">Bookmarked</option></select></label>
-  <div class="timer"><b id="timer">45:00</b><button id="timerToggle">Start</button><button id="timerReset" class="secondary">Reset</button></div>
-</section>
-<section id="view-plan" class="view">
-  <div class="intro-grid"><article class="panel accent"><p class="eyebrow">METHOD</p><h2 id="methodTitle"></h2><ol id="methodSteps"></ol></article>
-  <article class="panel"><p class="eyebrow">CASE STUDY</p><h2 id="caseTitle"></h2><p id="caseDescription"></p><p id="notice" class="notice"></p></article></div>
-  <div id="dayNav" class="day-nav"></div><div id="daySections"></div>
-</section>
-<section id="view-tracks" class="view"><header class="section-head"><p class="eyebrow">TOPIC-WISE REVISION</p><h2>Study by engineering track</h2></header><div id="trackCards" class="track-grid"></div><div id="trackQuestionResults"></div></section>
-<section id="view-matrix" class="view"><header class="section-head"><p class="eyebrow">ENGINEERING INTERFACE</p><h2 id="matrixTitle"></h2></header><div class="table-wrap"><table><thead><tr id="matrixHeaders"></tr></thead><tbody id="matrixBody"></tbody></table></div></section>
-<section id="view-focus" class="view"><header class="section-head"><p class="eyebrow">PREPARATION COVERAGE</p><h2 id="focusTitle"></h2></header><div class="table-wrap"><table><thead><tr id="focusHeaders"></tr></thead><tbody id="focusBody"></tbody></table></div><article class="panel job-note"><h3>Interview positioning</h3><p id="focusNote"></p></article></section>
-<section id="view-mock" class="view"><header class="section-head"><p class="eyebrow">FINAL PRACTICE</p><h2 id="mockTitle"></h2></header><div id="quiz"></div><article class="panel"><h3 id="boardTitle"></h3><p><strong>Prompt:</strong> <span id="boardPrompt"></span></p><div class="mock-grid"><div><h4>Structure</h4><ol id="boardStructure"></ol></div><div><h4>Interviewer pressure</h4><ul id="boardPressure"></ul></div></div></article></section>
+  <section id="view-modules" class="view active">
+    <header class="section-head">
+      <p class="eyebrow">VEHICLE LEARNING GARAGE</p>
+      <h2>Select an automotive learning module</h2>
+      <p>Each subsystem is an independent technical learning module running on the same platform.</p>
+    </header>
+    <div id="moduleCards" class="topic-grid"></div>
+  </section>
+
+  <section id="diagnosticToolbar" class="toolbar hidden" aria-label="Learning filters">
+    <label class="wide">Diagnostic search<input id="search" type="search" placeholder="Search checkpoints, modules, interfaces…"></label>
+    <label>Difficulty<select id="tierFilter"><option value="">All</option><option>Foundation</option><option>Intermediate</option><option>Advanced</option><option>Expert</option></select></label>
+    <label>System<select id="systemFilter"><option value="">All systems</option></select></label>
+    <label>Status<select id="statusFilter"><option value="">All</option><option value="open">Not complete</option><option value="done">Complete</option><option value="bookmarked">Flagged</option></select></label>
+    <div class="timer"><b id="timer">45:00</b><button id="timerToggle">Start</button><button id="timerReset" class="secondary">Reset</button></div>
+  </section>
+
+  <section id="view-route" class="view">
+    <div class="intro-grid">
+      <article class="panel accent"><p class="eyebrow">LEARNING MODE</p><h2 id="learningMethodTitle"></h2><ol id="learningMethodSteps"></ol></article>
+      <article class="panel"><p class="eyebrow">REFERENCE VEHICLE</p><h2 id="caseTitle"></h2><p id="caseDescription"></p><p id="notice" class="notice"></p></article>
+    </div>
+    <div id="routeNav" class="day-nav"></div>
+    <div id="routeStages"></div>
+  </section>
+
+  <section id="view-systems" class="view">
+    <header class="section-head"><p class="eyebrow">SYSTEM-WISE REVISION</p><h2>Study by automotive system</h2></header>
+    <div id="systemCards" class="track-grid"></div>
+    <div id="systemCheckpointResults"></div>
+  </section>
+
+  <section id="view-interfaces" class="view">
+    <header class="section-head"><p class="eyebrow">VEHICLE INTERFACES</p><h2 id="interfaceMapTitle"></h2></header>
+    <div class="table-wrap"><table><thead><tr id="interfaceMapHeaders"></tr></thead><tbody id="interfaceMapBody"></tbody></table></div>
+  </section>
+
+  <section id="view-coverage" class="view">
+    <header class="section-head"><p class="eyebrow">LEARNING COVERAGE</p><h2 id="coverageTitle"></h2></header>
+    <div class="table-wrap"><table><thead><tr id="coverageHeaders"></tr></thead><tbody id="coverageBody"></tbody></table></div>
+    <article class="panel learning-note"><h3>Architectural learning perspective</h3><p id="coverageNote"></p></article>
+  </section>
+
+  <section id="view-validation" class="view">
+    <header class="section-head"><p class="eyebrow">KNOWLEDGE VALIDATION</p><h2 id="validationTitle"></h2></header>
+    <div id="knowledgeCheck"></div>
+    <article class="panel">
+      <h3 id="exerciseTitle"></h3>
+      <p><strong>Engineering challenge:</strong> <span id="exercisePrompt"></span></p>
+      <div class="mock-grid">
+        <div><h4>Recommended structure</h4><ol id="exerciseStructure"></ol></div>
+        <div><h4>Challenge scenarios</h4><ul id="exerciseChallenges"></ul></div>
+      </div>
+    </article>
+  </section>
 </main>
-<footer>Progress, ratings and bookmarks are stored only in this browser and are separated by topic.</footer>
+<footer>Completion, confidence ratings and flags are stored in this browser as retained module state.</footer>
 <script src="assets/content.js"></script>
+<script src="assets/learning-language.js"></script>
 <script src="assets/app.js"></script>
-</body></html>
+</body>
+</html>
